@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7dfaf5dd-1b98-4983-990e-376cb5c43234">
+  <producedTypes>
+    <refType typeId="d1edbc6b-9bdf-450b-b7fd-e037e29fe571" valueTypeId="92c48795-5517-40dd-9e39-e207d3451c11"/>
+    <listType typeId="77569f7f-2d4d-4519-ac17-d1623b95cc35" valueTypeId="47a98a07-c13e-4f7c-8d5e-33bb75c1f5b8"/>
+    <managerType typeId="c97c1dc4-e8b5-4206-83c3-02fc90214180" valueTypeId="a4cc62e8-b2f9-4edd-88a5-e6724102e650"/>
+  </producedTypes>
+  <name>ВидыПострочногоПоиска</name>
+  <synonym>
+    <key>ru</key>
+    <value>Виды построчного поиска</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="ed051a7b-0229-4fcd-941b-cfd26d1fa996">
+    <name>СНачалаФайла</name>
+    <synonym>
+      <key>ru</key>
+      <value>С начала файла</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="477c2ba4-b62c-48b3-9a18-2dc1c1bc67ac">
+    <name>ДалееВФайле</name>
+    <synonym>
+      <key>ru</key>
+      <value>Далее в файле</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="bf6ba561-c87a-406d-aff8-ee54c673bd36">
+    <name>НаСледующейСтроке</name>
+    <synonym>
+      <key>ru</key>
+      <value>На следующей строке</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="f78586d0-3d8d-4a5f-b3c3-54b1e046ef39">
+    <name>СледующиеДесятьСтрок</name>
+    <synonym>
+      <key>ru</key>
+      <value>Следующие десять строк</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="0fe186ef-c7e6-4d2c-a61b-952c4d942ecb">
+    <name>СледующиеТридцатьСтрок</name>
+    <synonym>
+      <key>ru</key>
+      <value>Следующие тридцать строк</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="8a0daccb-d66a-4cc1-b150-8cf4e429eaa0">
+    <name>СледующиеШестьдесятСтрок</name>
+    <synonym>
+      <key>ru</key>
+      <value>Следующие шестьдесят строк</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="0996f1aa-5046-4770-af16-01b5a96224f2">
+    <name>СледующиеСтоСтрок</name>
+    <synonym>
+      <key>ru</key>
+      <value>Следующие сто строк</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="d1755300-d2a8-4497-b936-8cf48d3cc6be">
+    <name>ДоКонцаМетода</name>
+    <synonym>
+      <key>ru</key>
+      <value>До конца текущего метода</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

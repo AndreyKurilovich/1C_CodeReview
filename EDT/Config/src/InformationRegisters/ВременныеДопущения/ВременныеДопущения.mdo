@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="38fe4739-9161-4f7b-9411-d87f851c6125">
+  <producedTypes>
+    <selectionType typeId="f70d0ad6-e1da-449a-921e-fb46e5a62c4c" valueTypeId="08486fc9-f0b0-4e23-a41b-a8eff0c2ed46"/>
+    <listType typeId="7d18a6fe-b0d4-4ffd-81c5-a42bbeb29aca" valueTypeId="d58be18d-414a-487f-bd4d-129706fae852"/>
+    <managerType typeId="617f3835-baae-4ac5-94d0-23fb1763eb82" valueTypeId="475ce3bc-6cf4-427d-b447-6c996ca934a7"/>
+    <recordSetType typeId="46f0e5fd-2e54-4d39-a775-2af80e8e843c" valueTypeId="8edbe609-52af-4167-b317-80bec62c4a85"/>
+    <recordKeyType typeId="2642c85f-f0a8-4ad9-9bc5-ef6fb9d57fa6" valueTypeId="b5faab7d-6733-43c3-ae9d-371d722958cc"/>
+    <recordType typeId="9b44a630-015d-4004-a5ce-ab970c9c5bd0" valueTypeId="f303dcf2-4c5f-4855-9886-4156798e978f"/>
+    <recordManagerType typeId="4c6e99d9-73d9-40eb-9237-fe15d8701fa2" valueTypeId="45b775c6-27b5-4209-a91c-58fe360ec7a5"/>
+  </producedTypes>
+  <name>ВременныеДопущения</name>
+  <synonym>
+    <key>ru</key>
+    <value>Временные допущения</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.ВременныеДопущения.Form.ФормаЗаписи</defaultRecordForm>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="47bf919e-7500-46bc-a057-c3f85db1c481">
+    <name>Картинка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Картинка (код)</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>2</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="d1b2022e-3a9d-4fe7-b32b-ed8538e91448">
+    <name>ДнейОт</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дней от (включительно)</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>5</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="78fce084-9d3c-45b3-b84d-cddc43ad66a7">
+    <name>ДнейДо</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дней до</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>5</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="309d6256-aa44-4c63-94ae-1dfe9f9a7406">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

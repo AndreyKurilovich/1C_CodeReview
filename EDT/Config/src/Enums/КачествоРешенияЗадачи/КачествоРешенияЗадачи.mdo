@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1cec8174-eaa1-4f72-b7f0-6e2e53629efc">
+  <producedTypes>
+    <refType typeId="ab338bc3-23ca-453a-b7ae-557d8b43c01d" valueTypeId="dd5268ab-c310-40d8-8349-2efe7f65d5b0"/>
+    <listType typeId="0530946a-c3c6-410e-9f3a-b19df2e3d634" valueTypeId="65d28872-5306-4da6-9a95-c9c199cb26c2"/>
+    <managerType typeId="271109f5-72f6-45bf-9db7-41a3b67941bf" valueTypeId="ee1df12e-1d65-415a-92ea-e56b8e7127c1"/>
+  </producedTypes>
+  <name>КачествоРешенияЗадачи</name>
+  <synonym>
+    <key>ru</key>
+    <value>Качество решения задачи</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="3fbbd157-460a-4199-856f-e7bbb865d2bd">
+    <name>Великолепно</name>
+    <synonym>
+      <key>ru</key>
+      <value>Великолепно</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="17841da6-7e65-4a42-8a09-d1c4b4f2ad84">
+    <name>Удовлетворительно</name>
+    <synonym>
+      <key>ru</key>
+      <value>Удовлетворительно</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="07019d06-e082-468b-8b57-39b74350f1f9">
+    <name>ТяпЛяп</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тяп ляп</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>
