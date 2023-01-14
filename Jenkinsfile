@@ -3,7 +3,7 @@ pipeline {
     agent {
         node {
             label 'Windows'
-                customWorkspace 'C:\\Jenkins\\CodeRewiev\\Repo'
+                customWorkspace 'C:\\Projects\\CodeReview\\Jenkins\\Repo'
         }
     }
   
@@ -43,7 +43,7 @@ pipeline {
         stage ("Compile configuration") {    
             steps {
                     cmd("echo Compile .cf")    
-                    cmd("vrunner compile --src ${WORKSPACE}\\Config --out ${WORKSPACE}\\Temp\\1Cv8.cf")
+                    cmd("vrunner compile --src ${WORKSPACE}\\DESIGNER --out ${WORKSPACE}\\Temp\\1Cv8.cf")
                 }
             }  
 
@@ -115,7 +115,7 @@ pipeline {
 
         unstable {
             cmd("echo unstable")
-            SendEmail('Ошибки прохождения тестирования! http://10.61.62.15:8081/job/CodeRewiev/job/Sonar/allure/  Адрес проекта - http://10.61.62.15:8081/job/CodeRewiev/job/Sonar/', 'OBI_UT - unstable.', 'ankr@odysseyconsgroup.com') 
+            SendEmail('Ошибки прохождения тестирования. http://10.61.62.15:8081/job/CodeRewiev/job/Sonar/allure/  Адрес проекта - http://10.61.62.15:8081/job/CodeRewiev/job/Sonar/', 'OBI_UT - unstable.', 'ankr@odysseyconsgroup.com') 
         }      
 
         success {
