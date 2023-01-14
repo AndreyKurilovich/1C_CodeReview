@@ -1,0 +1,136 @@
+pipeline {
+
+    agent {
+        node {
+            label 'Windows'
+                customWorkspace 'C:\\Jenkins\\CodeRewiev\\Repo'
+        }
+    }
+  
+    environment{
+
+        OSv8version = "--v8version ${env.v8version}"
+        
+        Sonar_login = "\"sonar.login=${env.Sonar_Token}\""
+        
+        ReliaseBaseConnection       = "/F${ReliaseBasePach}"
+        ReliaseBaseAuthorization    = "--db-user ${env.ReliaseBaseUser} --db-pwd ${env.ReliaseBasePwd}"
+
+        WorkBaseConnection       = "/S${WorkBasePach}"
+        WorkBaseAuthorization    = "--db-user ${env.WorkBaseUser} --db-pwd ${env.WorkBasePwd}"
+
+        ACCBaseConnection           = "/F${env.ACCBasePach}"
+        ACCBaseAuthorization        = "--db-user ${env.ACCBaseUser} --db-pwd ${env.ACCBasePwd}"
+    }    
+
+    stages{ 
+                
+        stage ("Preparation") {
+            steps {                   
+                
+                cmd("IF NOT EXIST ${WORKSPACE}\\Temp md ${WORKSPACE}\\Temp")
+                cmd("del ${WORKSPACE}\\Temp\\*.png")
+                
+                cmd("IF EXIST ${WORKSPACE}\\allure-results rmdir /s /q ${WORKSPACE}\\allure-results")
+                cmd("IF NOT EXIST ${WORKSPACE}\\allure-results md ${WORKSPACE}\\allure-results") 
+                
+                cmd("IF EXIST ${WORKSPACE}\\allure-report rmdir /s /q ${WORKSPACE}\\allure-report")
+                cmd("IF NOT EXIST ${WORKSPACE}\\allure-report md ${WORKSPACE}\\allure-report") 
+
+            }
+        } 
+        
+        stage ("Compile configuration") {    
+            steps {
+                    cmd("echo Compile .cf")    
+                    cmd("vrunner compile --src ${WORKSPACE}\\Config --out ${WORKSPACE}\\Temp\\1Cv8.cf")
+                }
+            }  
+
+        stage ('Saving configuration') {
+            steps {
+                cmd("echo Saving configuration")
+                cmd("vrunner load --src ${WORKSPACE}\\Temp\\1Cv8.cf --ibconnection ${ReliaseBaseConnection} ${ReliaseBaseAuthorization}")
+                cmd("vrunner updatedb --ibconnection ${ReliaseBaseConnection} ${ReliaseBaseAuthorization}")
+            }  
+        }  
+
+         stage('Run parallel') {
+           
+            parallel {
+                
+                stage('Check ACC') {
+                    agent {
+                        label "Windows"
+                    }
+                    steps {
+                        
+                        cmd("echo yes") 
+                        cmd("runner run --ibconnection ${ACCBaseConnection} ${ACCBaseAuthorization} --command acc.propertiesPaths=${Workspace}\\ACC\\acc.properties; --execute ${Workspace}\\ACC\\acc-export.epf --ordinaryapp=1")                
+                    }
+                }
+
+                stage('Testing VA') {
+                    agent {
+                        label "Windows2"
+                    }
+                    steps {
+
+                        cmd("echo Scenario_test")
+                        cmd("start \"Debug Server\" \"C:\\Program Files\\1cv8\\${env.v8version}\\bin\\dbgs.exe\" --addr=${env.DebugServerAdres} --port=${env.DebugServerPort}")
+                        sleep 5
+                        cmd("start \"Coverage41C\" Coverage41C start -i DefAlias -u http://${env.DebugServerAdres}:${env.DebugServerPort} -o ${WORKSPACE}\\Temp\\inputRawXmlFile.xml")
+                
+                        cmd("vrunner run --execute ${env.VA_PATH} --ibconnection ${ReliaseBaseConnection} ${ReliaseBaseAuthorization} ${OSv8version} --command StartFeaturePlayer;QuietInstallVanessaExt;VAParams=${WORKSPACE}\\Vanessa\\VAParams.json --additional /TESTMANAGER") 
+                                
+                        sleep 5
+                        cmd("Coverage41C stop -i DefAlias -u http://${env.DebugServerAdres}:${env.DebugServerPort}")
+                        cmd("Coverage41C convert -P ${WORKSPACE}\\ -s Config -o ${WORKSPACE}\\Temp\\genericCoverage.xml -c ${WORKSPACE}\\Temp\\inputRawXmlFile.xml")
+                            
+                    }
+                }
+
+            }
+        }
+
+        stage("Check Sonar") {
+            steps {
+                cmd("echo yes") 
+                cmd("""cd ${WORKSPACE}\\
+                ${env.Sonar_Scanner_PATH} -D${sonar_login}""")
+            }
+        }
+
+    }
+
+    post {
+        
+        always {
+            allure includeProperties: false, jdk: '', results: [[path: 'allure-results']]
+        }
+
+        failure {
+            SendEmail('Project - http://10.61.62.15:8081/job/CodeRewiev/job/Sonar/', 'Project Code Review - failure Pipeline!', 'ankr@odysseyconsgroup.com') 
+        }
+
+        unstable {
+            cmd("echo unstable")
+            SendEmail('Ошибки прохождения тестирования! http://10.61.62.15:8081/job/CodeRewiev/job/Sonar/allure/  Адрес проекта - http://10.61.62.15:8081/job/CodeRewiev/job/Sonar/', 'OBI_UT - unstable.', 'ankr@odysseyconsgroup.com') 
+        }      
+
+        success {
+            cmd("echo success")
+            cmd("vrunner load --src ${WORKSPACE}\\Temp\\1Cv8.cf --ibconnection ${WorkBaseConnection} ${WorkBaseAuthorization}")
+            cmd("vrunner updatedb --ibconnection ${WorkBaseConnection} ${WorkBaseAuthorization}")
+        }
+    }
+
+}
+
+def cmd(command) {
+    bat "chcp 65001\n ${command}"
+}
+
+def SendEmail(body, subject, to) {
+    emailext attachLog: true, body: "${body}", recipientProviders: [buildUser()], subject: "${subject}", to: "${to}"
+}
