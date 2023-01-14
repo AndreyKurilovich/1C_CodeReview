@@ -517,6 +517,7 @@
             <autoFill>true</autoFill>
           </contextMenu>
           <type>RadioButtonField</type>
+          <groupHorizontalAlign>Center</groupHorizontalAlign>
           <editMode>Enter</editMode>
           <showInHeader>true</showInHeader>
           <headerHorizontalAlign>Left</headerHorizontalAlign>
