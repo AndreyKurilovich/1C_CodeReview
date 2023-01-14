@@ -21,7 +21,7 @@
   <defaultRoles>Role.ИнтерактивноеОткрытиеВнешнихОтчетовИОбработок</defaultRoles>
   <defaultRoles>Role.ПолныеПрава</defaultRoles>
   <vendor>Курилович Андрей</vendor>
-  <version>1.0.1</version>
+  <version>1.0.2</version>
   <commonSettingsStorage>SettingsStorage.ОбщееХранилищеНастроек</commonSettingsStorage>
   <usedMobileApplicationFunctionalities>
     <functionality>
