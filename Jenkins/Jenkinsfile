@@ -120,8 +120,6 @@ pipeline {
 
         success {
             cmd("echo success")
-            cmd("vrunner load --src ${WORKSPACE}\\Temp\\1Cv8.cf --ibconnection ${WorkBaseConnection} ${WorkBaseAuthorization}")
-            cmd("vrunner updatedb --ibconnection ${WorkBaseConnection} ${WorkBaseAuthorization}")
         }
     }
 

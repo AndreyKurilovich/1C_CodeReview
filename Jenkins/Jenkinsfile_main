@@ -55,50 +55,15 @@ pipeline {
             }  
         }  
 
-         stage('Run parallel') {
-           
-            parallel {
-                
-                stage('Check ACC') {
-                    agent {
-                        label "Windows"
-                    }
-                    steps {
-                        
-                        cmd("echo yes") 
-                        cmd("runner run --ibconnection ${ACCBaseConnection} ${ACCBaseAuthorization} --command acc.propertiesPaths=${Workspace}\\ACC\\acc.properties; --execute ${Workspace}\\ACC\\acc-export.epf --ordinaryapp=1")                
-                    }
-                }
-
-                stage('Testing VA') {
-                    agent {
-                        label "Windows2"
-                    }
-                    steps {
-
-                        cmd("echo Scenario_test")
-                        cmd("start \"Debug Server\" \"C:\\Program Files\\1cv8\\${env.v8version}\\bin\\dbgs.exe\" --addr=${env.DebugServerAdres} --port=${env.DebugServerPort}")
-                        sleep 5
-                        cmd("start \"Coverage41C\" Coverage41C start -i DefAlias -u http://${env.DebugServerAdres}:${env.DebugServerPort} -o ${WORKSPACE}\\Temp\\inputRawXmlFile.xml")
-                
-                        cmd("vrunner run --execute ${env.VA_PATH} --ibconnection ${ReliaseBaseConnection} ${ReliaseBaseAuthorization} ${OSv8version} --command StartFeaturePlayer;QuietInstallVanessaExt;VAParams=${WORKSPACE}\\Vanessa\\VAParams.json --additional /TESTMANAGER") 
-                                
-                        sleep 5
-                        cmd("Coverage41C stop -i DefAlias -u http://${env.DebugServerAdres}:${env.DebugServerPort}")
-                        cmd("Coverage41C convert -P ${WORKSPACE}\\ -s DESIGNER -o ${WORKSPACE}\\Temp\\genericCoverage.xml -c ${WORKSPACE}\\Temp\\inputRawXmlFile.xml")
-                            
-                    }
-                }
-
+        stage('Testing VA') {
+            agent {
+                label "Windows2"
             }
-        }
-
-        stage("Check Sonar") {
             steps {
-                cmd("echo yes") 
-                cmd("""cd ${WORKSPACE}\\
-                ${env.Sonar_Scanner_PATH} -D${sonar_login}""")
-            }
+
+                cmd("echo Scenario_test")
+                cmd("vrunner run --execute ${env.VA_PATH} --ibconnection ${ReliaseBaseConnection} ${ReliaseBaseAuthorization} ${OSv8version} --command StartFeaturePlayer;QuietInstallVanessaExt;VAParams=${WORKSPACE}\\Vanessa\\VAParams.json --additional /TESTMANAGER") 
+                    }
         }
 
     }
@@ -110,12 +75,12 @@ pipeline {
         }
 
         failure {
-            SendEmail('Project - http://10.61.62.15:8081/job/CodeRewiev/job/Sonar/', 'Project Code Review - failure Pipeline!', 'ankr@odysseyconsgroup.com') 
+            SendEmail('Project Code Review', 'Project Code Review - failure Pipeline!', 'ankr@odysseyconsgroup.com') 
         }
 
         unstable {
             cmd("echo unstable")
-            SendEmail('Ошибки прохождения тестирования. http://10.61.62.15:8081/job/CodeRewiev/job/Sonar/allure/  Адрес проекта - http://10.61.62.15:8081/job/CodeRewiev/job/Sonar/', 'OBI_UT - unstable.', 'ankr@odysseyconsgroup.com') 
+            SendEmail('Ошибки прохождения тестирования Project Code Review.', 'Project Code Review - unstable.', 'ankr@odysseyconsgroup.com') 
         }      
 
         success {
