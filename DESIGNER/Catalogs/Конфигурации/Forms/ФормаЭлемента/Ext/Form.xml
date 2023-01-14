@@ -37,21 +37,49 @@
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ГруппаКаталогиРасширеннаяПодсказка" id="19"/>
 			<ChildItems>
+				<LabelDecoration name="ДекорацияИнфо" id="33">
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Все каталоги указываются с учетом их доступности на клиенте</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ДекорацияИнфоКонтекстноеМеню" id="34"/>
+					<ExtendedTooltip name="ДекорацияИнфоРасширеннаяПодсказка" id="35"/>
+				</LabelDecoration>
 				<InputField name="КаталогРепозитория" id="7">
 					<DataPath>Объект.КаталогРепозитория</DataPath>
 					<EditMode>EnterOnInput</EditMode>
+					<InputHint>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>I:\Projects\1C_CodeReview\Repo\</v8:content>
+						</v8:item>
+					</InputHint>
 					<ContextMenu name="КаталогРепозиторияКонтекстноеМеню" id="8"/>
 					<ExtendedTooltip name="КаталогРепозиторияРасширеннаяПодсказка" id="9"/>
 				</InputField>
 				<InputField name="КаталогИсходников" id="10">
 					<DataPath>Объект.КаталогИсходников</DataPath>
 					<EditMode>EnterOnInput</EditMode>
+					<InputHint>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>I:\Projects\1C_CodeReview\Repo\1C_CodeReview\DESIGNER</v8:content>
+						</v8:item>
+					</InputHint>
 					<ContextMenu name="КаталогИсходниковКонтекстноеМеню" id="11"/>
 					<ExtendedTooltip name="КаталогИсходниковРасширеннаяПодсказка" id="12"/>
 				</InputField>
 				<InputField name="ИмяФайлаРезультата" id="13">
 					<DataPath>Объект.ИмяФайлаРезультата</DataPath>
 					<EditMode>EnterOnInput</EditMode>
+					<InputHint>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>I:\Projects\1C_CodeReview\Repo\CodeReview.json</v8:content>
+						</v8:item>
+					</InputHint>
 					<ContextMenu name="ИмяФайлаРезультатаКонтекстноеМеню" id="14"/>
 					<ExtendedTooltip name="ИмяФайлаРезультатаРасширеннаяПодсказка" id="15"/>
 				</InputField>
@@ -65,11 +93,29 @@
 			<ChildItems>
 				<InputField name="ПутьРепозитория" id="30">
 					<DataPath>Объект.ПутьРепозитория</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>URL репозитория</v8:content>
+						</v8:item>
+					</Title>
+					<InputHint>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>https://github.com/AndreyKurilovich/1C_CodeReview</v8:content>
+						</v8:item>
+					</InputHint>
 					<ContextMenu name="ПутьРепозиторияКонтекстноеМеню" id="31"/>
 					<ExtendedTooltip name="ПутьРепозиторияРасширеннаяПодсказка" id="32"/>
 				</InputField>
 				<InputField name="ОбработанныйКоммит" id="27">
 					<DataPath>Объект.ОбработанныйКоммит</DataPath>
+					<InputHint>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>8f891746</v8:content>
+						</v8:item>
+					</InputHint>
 					<ContextMenu name="ОбработанныйКоммитКонтекстноеМеню" id="28"/>
 					<ExtendedTooltip name="ОбработанныйКоммитРасширеннаяПодсказка" id="29"/>
 				</InputField>

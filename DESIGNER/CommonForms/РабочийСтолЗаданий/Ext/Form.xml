@@ -151,18 +151,6 @@
 								<ExtendedTooltip name="СписокУправлениеПоискомРасширеннаяПодсказка" id="13"/>
 							</SearchControlAddition>
 							<ChildItems>
-								<CheckBoxField name="СписокУсловиеПоискаНайдено" id="44">
-									<DataPath>Список.УсловиеПоискаНайдено</DataPath>
-									<Title>
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>В коде</v8:content>
-										</v8:item>
-									</Title>
-									<CheckBoxType>Auto</CheckBoxType>
-									<ContextMenu name="СписокУсловиеПоискаНайденоКонтекстноеМеню" id="45"/>
-									<ExtendedTooltip name="СписокУсловиеПоискаНайденоРасширеннаяПодсказка" id="46"/>
-								</CheckBoxField>
 								<ColumnGroup name="СписокГруппаСрокДавности" id="133">
 									<Group>InCell</Group>
 									<ExtendedTooltip name="СписокГруппаСрокДавностиРасширеннаяПодсказка" id="134"/>
@@ -583,7 +571,6 @@
 	Задачи.Файл КАК Файл,
 	Задачи.Состояние КАК Состояние,
 	Задачи.Описание КАК Описание,
-	ЕСТЬNULL(СведенияОПоискеЗадачСрезПоследних.УсловиеПоискаНайдено, ЛОЖЬ) КАК УсловиеПоискаНайдено,
 	ЕСТЬNULL(СведенияОПоискеЗадачСрезПоследних.НомерНачальнойСтроки, 0) КАК НомерНачальнойСтроки,
 	ЕСТЬNULL(СведенияОПоискеЗадачСрезПоследних.НомерСимволаНачальнойСтроки, 0) КАК НомерСимволаНачальнойСтроки,
 	ЕСТЬNULL(СведенияОПоискеЗадачСрезПоследних.НомерКонечнойСтроки, 0) КАК НомерКонечнойСтроки,
@@ -690,16 +677,6 @@
 				<Field xsi:type="dcssch:DataSetFieldField">
 					<dcssch:dataPath>Комментарий</dcssch:dataPath>
 					<dcssch:field>Комментарий</dcssch:field>
-				</Field>
-				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>УсловиеПоискаНайдено</dcssch:dataPath>
-					<dcssch:field>УсловиеПоискаНайдено</dcssch:field>
-					<dcssch:title xsi:type="v8:LocalStringType">
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Условие поиска найдено</v8:content>
-						</v8:item>
-					</dcssch:title>
 				</Field>
 				<Field xsi:type="dcssch:DataSetFieldField">
 					<dcssch:dataPath>ДнейВРаботе</dcssch:dataPath>
