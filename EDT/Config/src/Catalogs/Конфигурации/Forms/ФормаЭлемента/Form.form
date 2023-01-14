@@ -136,6 +136,50 @@
   <items xsi:type="form:FormGroup">
     <name>ГруппаКаталоги</name>
     <id>18</id>
+    <items xsi:type="form:Decoration">
+      <name>ДекорацияИнфо</name>
+      <id>33</id>
+      <title>
+        <key>ru</key>
+        <value>Все каталоги указываются с учетом их доступности на клиенте</value>
+      </title>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <extendedTooltip>
+        <name>ДекорацияИнфоРасширеннаяПодсказка</name>
+        <id>35</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>ДекорацияИнфоКонтекстноеМеню</name>
+        <id>34</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </items>
     <items xsi:type="form:FormField">
       <name>КаталогРепозитория</name>
       <id>7</id>
@@ -184,6 +228,10 @@
         <chooseType>true</chooseType>
         <typeDomainEnabled>true</typeDomainEnabled>
         <textEdit>true</textEdit>
+        <inputHint>
+          <key>ru</key>
+          <value>I:\Projects\1C_CodeReview\Repo\</value>
+        </inputHint>
       </extInfo>
     </items>
     <items xsi:type="form:FormField">
@@ -234,6 +282,10 @@
         <chooseType>true</chooseType>
         <typeDomainEnabled>true</typeDomainEnabled>
         <textEdit>true</textEdit>
+        <inputHint>
+          <key>ru</key>
+          <value>I:\Projects\1C_CodeReview\Repo\1C_CodeReview\DESIGNER</value>
+        </inputHint>
       </extInfo>
     </items>
     <items xsi:type="form:FormField">
@@ -284,6 +336,10 @@
         <chooseType>true</chooseType>
         <typeDomainEnabled>true</typeDomainEnabled>
         <textEdit>true</textEdit>
+        <inputHint>
+          <key>ru</key>
+          <value>I:\Projects\1C_CodeReview\Repo\CodeReview.json</value>
+        </inputHint>
       </extInfo>
     </items>
     <visible>true</visible>
@@ -322,6 +378,10 @@
     <items xsi:type="form:FormField">
       <name>ПутьРепозитория</name>
       <id>30</id>
+      <title>
+        <key>ru</key>
+        <value>URL репозитория</value>
+      </title>
       <visible>true</visible>
       <enabled>true</enabled>
       <userVisible>
@@ -367,6 +427,10 @@
         <chooseType>true</chooseType>
         <typeDomainEnabled>true</typeDomainEnabled>
         <textEdit>true</textEdit>
+        <inputHint>
+          <key>ru</key>
+          <value>https://github.com/AndreyKurilovich/1C_CodeReview</value>
+        </inputHint>
       </extInfo>
     </items>
     <items xsi:type="form:FormField">
@@ -417,6 +481,10 @@
         <chooseType>true</chooseType>
         <typeDomainEnabled>true</typeDomainEnabled>
         <textEdit>true</textEdit>
+        <inputHint>
+          <key>ru</key>
+          <value>8f891746</value>
+        </inputHint>
       </extInfo>
     </items>
     <visible>true</visible>

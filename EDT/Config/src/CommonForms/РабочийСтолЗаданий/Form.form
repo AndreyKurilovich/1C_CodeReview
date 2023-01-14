@@ -106,53 +106,6 @@
         <titleLocation>None</titleLocation>
         <excludedCommands>Copy</excludedCommands>
         <excludedCommands>Create</excludedCommands>
-        <items xsi:type="form:FormField">
-          <name>СписокУсловиеПоискаНайдено</name>
-          <id>44</id>
-          <title>
-            <key>ru</key>
-            <value>В коде</value>
-          </title>
-          <visible>true</visible>
-          <enabled>true</enabled>
-          <userVisible>
-            <common>true</common>
-          </userVisible>
-          <dataPath xsi:type="form:DataPath">
-            <segments>Список.УсловиеПоискаНайдено</segments>
-          </dataPath>
-          <extendedTooltip>
-            <name>СписокУсловиеПоискаНайденоРасширеннаяПодсказка</name>
-            <id>46</id>
-            <visible>true</visible>
-            <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
-            <type>Label</type>
-            <autoMaxWidth>true</autoMaxWidth>
-            <autoMaxHeight>true</autoMaxHeight>
-            <extInfo xsi:type="form:LabelDecorationExtInfo">
-              <horizontalAlign>Left</horizontalAlign>
-            </extInfo>
-          </extendedTooltip>
-          <contextMenu>
-            <name>СписокУсловиеПоискаНайденоКонтекстноеМеню</name>
-            <id>45</id>
-            <visible>true</visible>
-            <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
-            <autoFill>true</autoFill>
-          </contextMenu>
-          <type>CheckBoxField</type>
-          <editMode>Enter</editMode>
-          <showInHeader>true</showInHeader>
-          <headerHorizontalAlign>Left</headerHorizontalAlign>
-          <showInFooter>true</showInFooter>
-          <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
-        </items>
         <items xsi:type="form:FormGroup">
           <name>СписокГруппаСрокДавности</name>
           <id>133</id>
@@ -1866,7 +1819,6 @@
 	Задачи.Файл КАК Файл,
 	Задачи.Состояние КАК Состояние,
 	Задачи.Описание КАК Описание,
-	ЕСТЬNULL(СведенияОПоискеЗадачСрезПоследних.УсловиеПоискаНайдено, ЛОЖЬ) КАК УсловиеПоискаНайдено,
 	ЕСТЬNULL(СведенияОПоискеЗадачСрезПоследних.НомерНачальнойСтроки, 0) КАК НомерНачальнойСтроки,
 	ЕСТЬNULL(СведенияОПоискеЗадачСрезПоследних.НомерСимволаНачальнойСтроки, 0) КАК НомерСимволаНачальнойСтроки,
 	ЕСТЬNULL(СведенияОПоискеЗадачСрезПоследних.НомерКонечнойСтроки, 0) КАК НомерКонечнойСтроки,
@@ -1978,18 +1930,6 @@
       <fields xsi:type="schema:DataCompositionSchemaDataSetField">
         <dataPath>Комментарий</dataPath>
         <field>Комментарий</field>
-      </fields>
-      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
-        <dataPath>УсловиеПоискаНайдено</dataPath>
-        <field>УсловиеПоискаНайдено</field>
-        <title>
-          <localValue>
-            <content>
-              <key>ru</key>
-              <value>Условие поиска найдено</value>
-            </content>
-          </localValue>
-        </title>
       </fields>
       <fields xsi:type="schema:DataCompositionSchemaDataSetField">
         <dataPath>ДнейВРаботе</dataPath>
