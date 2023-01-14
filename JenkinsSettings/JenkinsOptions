@@ -1,0 +1,28 @@
+Properties Content
+
+v8version=8.3.20.1914
+
+ReliaseBasePach=C:\\Jenkins\\CodeRewiev\\Base\\Testing
+ReliaseBaseUser=Admin
+ReliaseBasePwd=1
+
+WorkBasePach=10.61.62.15:2541\CodeRewiev
+WorkBaseUser=CI
+WorkBasePwd=656649
+
+VA_PATH="C:\\Program Files\\OneScript\\lib\\vanessa-automation\\vanessa-automation.epf"
+
+ACCBasePach=C:\\Jenkins\\File_bases\\ACC
+ACCBaseUser=CI
+ACCBasePwd=1
+
+DebugServerAdres=127.0.0.1
+DebugServerPort=1560
+
+Sonar_Scanner_PATH ="C:\\Jenkins\\sonar-scanner\\bin\\sonar-scanner.bat"
+Sonar_Token=*
+
+
+Опрашивать SCM об изменениях
+
+H/15 * * * *
