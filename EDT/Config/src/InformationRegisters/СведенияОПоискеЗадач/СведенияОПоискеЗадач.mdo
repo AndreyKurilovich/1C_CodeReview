@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="08beea47-d6b1-4bfd-9576-56a70ba1bd0a">
+  <producedTypes>
+    <selectionType typeId="863d3379-ee87-45e7-aa22-2514c707279e" valueTypeId="1d48298b-4d84-4531-9bd7-197713a3fb51"/>
+    <listType typeId="e492eb67-422d-472b-a528-8e33b3ab7899" valueTypeId="78a776a3-debc-4036-b551-1a30ddd21c5f"/>
+    <managerType typeId="6c4e0ef1-a580-45ce-b89d-5e38450e5190" valueTypeId="3b8efd27-ea73-4a1b-b5f4-6b65662ec87c"/>
+    <recordSetType typeId="d2a23ceb-2faa-4b95-935b-9a81871b6255" valueTypeId="c6bd8da4-c308-4720-9690-b413a912b64e"/>
+    <recordKeyType typeId="b0eecceb-50b8-41b9-92c5-93775bc64455" valueTypeId="91f8f751-7c9b-4aa7-bdf1-8d8deb1ed1b4"/>
+    <recordType typeId="7c61c971-1f16-4f15-9b3e-6960345b9a7e" valueTypeId="617b49a2-3d34-40c7-bebe-210fd2af1218"/>
+    <recordManagerType typeId="66d89972-fbfb-4071-81db-a0ff6e4f274f" valueTypeId="b053e675-7262-42af-88c1-01f0b79896e3"/>
+  </producedTypes>
+  <name>СведенияОПоискеЗадач</name>
+  <synonym>
+    <key>ru</key>
+    <value>Сведения о поиске задач</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.СведенияОПоискеЗадач.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.СведенияОПоискеЗадач.Form.ФормаСписка</defaultListForm>
+  <informationRegisterPeriodicity>Second</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="359baa90-c6ca-43c1-9622-2b83f71b22fe">
+    <name>УсловиеПоискаНайдено</name>
+    <synonym>
+      <key>ru</key>
+      <value>Условие поиска найдено</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="f5befcb0-4df0-40a9-96b7-5c1e11ef9602">
+    <name>НомерНачальнойСтроки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер начальной строки</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="be1dc7e6-a5a5-466a-8b12-63ce9f072141">
+    <name>НомерСимволаНачальнойСтроки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер символа начальной строки</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="f0ea40af-a7d1-4c82-9b96-b24727d1c213">
+    <name>НомерКонечнойСтроки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер конечной строки</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="064520fa-1617-4c1e-98f4-4698f3e04bb6">
+    <name>НомерСимволаКонечнойСтроки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер символа конечной строки</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="ecc5db5f-15d0-473a-92ee-6200c4e4425f">
+    <name>БлокПрограммногоКода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Блок программного кода</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <dimensions uuid="3955237e-3306-408a-8c55-7f77a3a893ca">
+    <name>Задача</name>
+    <synonym>
+      <key>ru</key>
+      <value>Задача</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Задачи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="d60be39e-112c-4285-bdf2-50941c0abd46">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="5f58de30-37a0-46ec-ba5b-af170949d883">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

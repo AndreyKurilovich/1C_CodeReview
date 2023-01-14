@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonPicture xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="599dc13f-4015-4217-af2a-6957aae2fa0d">
+  <name>Ракета</name>
+  <synonym>
+    <key>ru</key>
+    <value>Ракета</value>
+  </synonym>
+</mdclass:CommonPicture>

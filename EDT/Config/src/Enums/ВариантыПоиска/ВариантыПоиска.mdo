@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f8f9e25e-4047-4fed-86b6-6ffb45cadb04">
+  <producedTypes>
+    <refType typeId="be2b2f21-3a0e-4abb-b0f6-689efc0ba8c9" valueTypeId="4cef88f7-b347-41cc-a7de-83111ee5ebe0"/>
+    <listType typeId="ba9fd202-50f9-4005-87c0-d7bc5c7caf3a" valueTypeId="3dd7086c-710e-4fc5-8902-6594a9de6de8"/>
+    <managerType typeId="f8176f92-19ab-4825-98c0-d3105760acff" valueTypeId="32e375e6-5dd4-4601-8d0e-b5c1a698078f"/>
+  </producedTypes>
+  <name>ВариантыПоиска</name>
+  <synonym>
+    <key>ru</key>
+    <value>Варианты поиска</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="0fbd7d66-d752-4ff3-bb01-3663c7643362">
+    <name>Содержит</name>
+    <synonym>
+      <key>ru</key>
+      <value>Содержит</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="48a60631-5372-4a16-b11a-36991567bf08">
+    <name>НеСодержит</name>
+    <synonym>
+      <key>ru</key>
+      <value>Не содержит</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

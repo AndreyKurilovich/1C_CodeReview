@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8f8b0c6d-271b-4ebc-8da3-b268053bb6f9">
+  <name>КодРевью</name>
+  <synonym>
+    <key>ru</key>
+    <value>Код ревью</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <content>Catalog.Конфигурации</content>
+  <content>Catalog.Задачи</content>
+  <content>Enum.СостоянияЗадач</content>
+  <content>Enum.ВариантыПоиска</content>
+  <content>Catalog.Файлы</content>
+  <content>InformationRegister.СведенияОПоискеЗадач</content>
+  <content>Enum.ВариантыУсловийПоиска</content>
+  <content>SettingsStorage.ОбщееХранилищеНастроек</content>
+  <content>Enum.ВидыПострочногоПоиска</content>
+  <content>InformationRegister.ВременныеДопущения</content>
+</mdclass:Subsystem>

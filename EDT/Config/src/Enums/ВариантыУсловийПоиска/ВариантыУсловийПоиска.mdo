@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="988b60ac-1d7a-4cde-992e-9fbfb55048c5">
+  <producedTypes>
+    <refType typeId="bb3fd8a1-9427-4059-9a9e-700f7bc062f7" valueTypeId="17f317f7-fee6-4439-9a2b-0a5cff2f6aa3"/>
+    <listType typeId="de87b33e-f08f-4bb1-9760-73b7fa641601" valueTypeId="40b68c8e-ec7b-437f-8379-7e37492f6b44"/>
+    <managerType typeId="757d1750-6b28-4a82-b594-3c3c111077eb" valueTypeId="78b7d3f2-929f-490a-80f4-346dcffedf6b"/>
+  </producedTypes>
+  <name>ВариантыУсловийПоиска</name>
+  <synonym>
+    <key>ru</key>
+    <value>Варианты условий поиска</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="f8f81f76-4963-42a1-929d-6d903a9dd660">
+    <name>ПоследовательныйПоискПоСтрокам</name>
+    <synonym>
+      <key>ru</key>
+      <value>Последовательный поиск по строкам</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="a7ca8ce0-8cda-4b2d-91a5-7f5e85ece366">
+    <name>ПерваяСтрокаФайла</name>
+    <synonym>
+      <key>ru</key>
+      <value>Первая строка файла</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>
