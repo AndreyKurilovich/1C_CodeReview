@@ -11,7 +11,6 @@
 		<Event name="OnOpen">ПриОткрытии</Event>
 		<Event name="OnLoadDataFromSettingsAtServer">ПриЗагрузкеДанныхИзНастроекНаСервере</Event>
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
-		<Event name="BeforeLoadDataFromSettingsAtServer">ПередЗагрузкойДанныхИзНастроекНаСервере</Event>
 	</Events>
 	<ChildItems>
 		<UsualGroup name="ОбщаяГруппа" id="62">
@@ -1010,10 +1009,10 @@
 					<d4p1:bottom>0</d4p1:bottom>
 				</d4p1:elementsChart>
 				<d4p1:elementsLegend>
-					<d4p1:left>0.80990415335463258785942492</d4p1:left>
-					<d4p1:right>0.05271565495207667731629393</d4p1:right>
-					<d4p1:top>0.731759656652360515021459227</d4p1:top>
-					<d4p1:bottom>0.079399141630901287553648069</d4p1:bottom>
+					<d4p1:left>0.8099041533546326</d4p1:left>
+					<d4p1:right>0.052715654952076675</d4p1:right>
+					<d4p1:top>0.7317596566523605</d4p1:top>
+					<d4p1:bottom>0.07939914163090128</d4p1:bottom>
 				</d4p1:elementsLegend>
 				<d4p1:elementsTitle>
 					<d4p1:left>0.83</d4p1:left>
