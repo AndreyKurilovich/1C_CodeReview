@@ -1887,10 +1887,6 @@
     <event>OnCreateAtServer</event>
     <name>ПриСозданииНаСервере</name>
   </handlers>
-  <handlers>
-    <event>BeforeLoadDataFromSettingsAtServer</event>
-    <name>ПередЗагрузкойДанныхИзНастроекНаСервере</name>
-  </handlers>
   <autoSaveDataInSettings>Use</autoSaveDataInSettings>
   <saveDataInSettings>UseList</saveDataInSettings>
   <settingsStorage>SettingsStorage.ОбщееХранилищеНастроек</settingsStorage>
