@@ -85,7 +85,7 @@ pipeline {
                                 
                         sleep 5
                         cmd("Coverage41C stop -i DefAlias -u http://${env.DebugServerAdres}:${env.DebugServerPort}")
-                        cmd("Coverage41C convert -P ${WORKSPACE}\\ -s Config -o ${WORKSPACE}\\Temp\\genericCoverage.xml -c ${WORKSPACE}\\Temp\\inputRawXmlFile.xml")
+                        cmd("Coverage41C convert -P ${WORKSPACE}\\ -s DESIGNER -o ${WORKSPACE}\\Temp\\genericCoverage.xml -c ${WORKSPACE}\\Temp\\inputRawXmlFile.xml")
                             
                     }
                 }
