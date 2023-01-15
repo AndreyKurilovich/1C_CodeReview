@@ -318,6 +318,10 @@
           <items xsi:type="form:FormField">
             <name>Конфигурация</name>
             <id>41</id>
+            <title>
+              <key>ru</key>
+              <value>Проект</value>
+            </title>
             <visible>true</visible>
             <enabled>true</enabled>
             <userVisible>
