@@ -77,6 +77,12 @@
 									<ChildItems>
 										<InputField name="ОбработанныйКоммит" id="141">
 											<DataPath>ОбработанныйКоммит</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Коммит</v8:content>
+												</v8:item>
+											</Title>
 											<ContextMenu name="ОбработанныйКоммитКонтекстноеМеню" id="142"/>
 											<ExtendedTooltip name="ОбработанныйКоммитРасширеннаяПодсказка" id="143"/>
 										</InputField>
@@ -90,6 +96,29 @@
 											</Picture>
 											<ExtendedTooltip name="ЗафиксироватьОбработанныйКоммитРасширеннаяПодсказка" id="145"/>
 										</Button>
+										<LabelField name="ДатаОбработанногоКоммита" id="189">
+											<DataPath>ДатаОбработанногоКоммита</DataPath>
+											<TitleLocation>None</TitleLocation>
+											<Width>12</Width>
+											<ContextMenu name="ДатаОбработанногоКоммитаКонтекстноеМеню" id="190"/>
+											<ExtendedTooltip name="ДатаОбработанногоКоммитаРасширеннаяПодсказка" id="191"/>
+										</LabelField>
+										<LabelField name="КоличествоДнейБезКодРевью" id="192">
+											<DataPath>КоличествоДнейБезКодРевью</DataPath>
+											<TitleLocation>None</TitleLocation>
+											<ContextMenu name="КоличествоДнейБезКодРевьюКонтекстноеМеню" id="193"/>
+											<ExtendedTooltip name="КоличествоДнейБезКодРевьюРасширеннаяПодсказка" id="194"/>
+										</LabelField>
+										<LabelDecoration name="ДекорацияНадписьДней" id="195">
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>дн.</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="ДекорацияНадписьДнейКонтекстноеМеню" id="196"/>
+											<ExtendedTooltip name="ДекорацияНадписьДнейРасширеннаяПодсказка" id="197"/>
+										</LabelDecoration>
 										<LabelField name="КонфигурацияПутьРепозитория" id="148">
 											<DataPath>Конфигурация.ПутьРепозитория</DataPath>
 											<TitleLocation>None</TitleLocation>
@@ -1324,6 +1353,36 @@
 				<d4p1:pointsAxis/>
 				<d4p1:legendPlacement>None</d4p1:legendPlacement>
 			</Settings>
+		</Attribute>
+		<Attribute name="ДатаОбработанногоКоммита" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата обработанного коммита</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>DateTime</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="КоличествоДнейБезКодРевью" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество дней без код ревью</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>3</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
 		</Attribute>
 		<ConditionalAppearance>
 			<dcsset:item>

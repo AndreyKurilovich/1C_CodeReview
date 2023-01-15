@@ -109,13 +109,6 @@
 					<ExtendedTooltip name="ПутьРепозиторияРасширеннаяПодсказка" id="32"/>
 				</InputField>
 				<InputField name="ОбработанныйКоммит" id="27">
-					<DataPath>Объект.ОбработанныйКоммит</DataPath>
-					<InputHint>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>8f891746</v8:content>
-						</v8:item>
-					</InputHint>
 					<ContextMenu name="ОбработанныйКоммитКонтекстноеМеню" id="28"/>
 					<ExtendedTooltip name="ОбработанныйКоммитРасширеннаяПодсказка" id="29"/>
 				</InputField>
