@@ -82,7 +82,6 @@
 												<InputField name="Наименование" id="49">
 													<DataPath>Объект.Description</DataPath>
 													<AutoMaxWidth>false</AutoMaxWidth>
-													<MaxWidth>22</MaxWidth>
 													<ContextMenu name="НаименованиеКонтекстноеМеню" id="50"/>
 													<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="51"/>
 												</InputField>
