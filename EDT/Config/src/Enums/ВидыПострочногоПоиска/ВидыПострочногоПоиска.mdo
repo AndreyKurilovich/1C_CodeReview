@@ -26,6 +26,13 @@
       <value>Далее в файле</value>
     </synonym>
   </enumValues>
+  <enumValues uuid="d1755300-d2a8-4497-b936-8cf48d3cc6be">
+    <name>ДоКонцаМетода</name>
+    <synonym>
+      <key>ru</key>
+      <value>До конца текущего метода</value>
+    </synonym>
+  </enumValues>
   <enumValues uuid="bf6ba561-c87a-406d-aff8-ee54c673bd36">
     <name>НаСледующейСтроке</name>
     <synonym>
@@ -59,13 +66,6 @@
     <synonym>
       <key>ru</key>
       <value>Следующие сто строк</value>
-    </synonym>
-  </enumValues>
-  <enumValues uuid="d1755300-d2a8-4497-b936-8cf48d3cc6be">
-    <name>ДоКонцаМетода</name>
-    <synonym>
-      <key>ru</key>
-      <value>До конца текущего метода</value>
     </synonym>
   </enumValues>
 </mdclass:Enum>
