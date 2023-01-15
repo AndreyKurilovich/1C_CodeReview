@@ -3,7 +3,7 @@ pipeline {
     agent {
         node {
             label 'Windows'
-                customWorkspace 'C:\\Projects\\CodeReview\\Jenkins\\Repo'
+                customWorkspace 'C:\\Projects\\CodeReview\\Jenkins\\RepoMain'
         }
     }
   
@@ -54,17 +54,6 @@ pipeline {
                 cmd("vrunner updatedb --ibconnection ${ReliaseBaseConnection} ${ReliaseBaseAuthorization}")
             }  
         }  
-
-        stage('Testing VA') {
-            agent {
-                label "Windows2"
-            }
-            steps {
-
-                cmd("echo Scenario_test")
-                cmd("vrunner run --execute ${env.VA_PATH} --ibconnection ${ReliaseBaseConnection} ${ReliaseBaseAuthorization} ${OSv8version} --command StartFeaturePlayer;QuietInstallVanessaExt;VAParams=${WORKSPACE}\\Vanessa\\VAParams.json --additional /TESTMANAGER") 
-                    }
-        }
 
     }
 
