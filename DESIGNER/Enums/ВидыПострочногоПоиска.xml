@@ -62,6 +62,18 @@
 					<Comment/>
 				</Properties>
 			</EnumValue>
+			<EnumValue uuid="d1755300-d2a8-4497-b936-8cf48d3cc6be">
+				<Properties>
+					<Name>ДоКонцаМетода</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>До конца текущего метода</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
 			<EnumValue uuid="bf6ba561-c87a-406d-aff8-ee54c673bd36">
 				<Properties>
 					<Name>НаСледующейСтроке</Name>
@@ -117,18 +129,6 @@
 						<v8:item>
 							<v8:lang>ru</v8:lang>
 							<v8:content>Следующие сто строк</v8:content>
-						</v8:item>
-					</Synonym>
-					<Comment/>
-				</Properties>
-			</EnumValue>
-			<EnumValue uuid="d1755300-d2a8-4497-b936-8cf48d3cc6be">
-				<Properties>
-					<Name>ДоКонцаМетода</Name>
-					<Synonym>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>До конца текущего метода</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
