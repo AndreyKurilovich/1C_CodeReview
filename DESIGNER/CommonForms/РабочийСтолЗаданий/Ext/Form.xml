@@ -133,70 +133,120 @@
 							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="ГруппаСписокРасширеннаяПодсказка" id="152"/>
 							<ChildItems>
-								<RadioButtonField name="ОтборСостоянияЗадач" id="109">
-									<DataPath>ОтборСостоянияЗадач</DataPath>
-									<TitleLocation>None</TitleLocation>
-									<RadioButtonType>Tumbler</RadioButtonType>
-									<ChoiceList>
-										<xr:Item>
-											<xr:Presentation/>
-											<xr:CheckState>0</xr:CheckState>
-											<xr:Value xsi:type="FormChoiceListDesTimeValue">
-												<Presentation>
-													<v8:item>
-														<v8:lang>ru</v8:lang>
-														<v8:content>КВыполнению</v8:content>
-													</v8:item>
-												</Presentation>
-												<Value xsi:type="xr:DesignTimeRef">Enum.СостоянияЗадач.EnumValue.КВыполнению</Value>
-											</xr:Value>
-										</xr:Item>
-										<xr:Item>
-											<xr:Presentation/>
-											<xr:CheckState>0</xr:CheckState>
-											<xr:Value xsi:type="FormChoiceListDesTimeValue">
-												<Presentation>
-													<v8:item>
-														<v8:lang>ru</v8:lang>
-														<v8:content>ОжидаетПроверки</v8:content>
-													</v8:item>
-												</Presentation>
-												<Value xsi:type="xr:DesignTimeRef">Enum.СостоянияЗадач.EnumValue.ОжидаетПроверки</Value>
-											</xr:Value>
-										</xr:Item>
-										<xr:Item>
-											<xr:Presentation/>
-											<xr:CheckState>0</xr:CheckState>
-											<xr:Value xsi:type="FormChoiceListDesTimeValue">
-												<Presentation>
-													<v8:item>
-														<v8:lang>ru</v8:lang>
-														<v8:content>Выполнено</v8:content>
-													</v8:item>
-												</Presentation>
-												<Value xsi:type="xr:DesignTimeRef">Enum.СостоянияЗадач.EnumValue.Выполнено</Value>
-											</xr:Value>
-										</xr:Item>
-										<xr:Item>
-											<xr:Presentation/>
-											<xr:CheckState>0</xr:CheckState>
-											<xr:Value xsi:type="FormChoiceListDesTimeValue">
-												<Presentation>
-													<v8:item>
-														<v8:lang>ru</v8:lang>
-														<v8:content>Отменено</v8:content>
-													</v8:item>
-												</Presentation>
-												<Value xsi:type="xr:DesignTimeRef">Enum.СостоянияЗадач.EnumValue.Отменено</Value>
-											</xr:Value>
-										</xr:Item>
-									</ChoiceList>
-									<ContextMenu name="ОтборСостоянияЗадачКонтекстноеМеню" id="110"/>
-									<ExtendedTooltip name="ОтборСостоянияЗадачРасширеннаяПодсказка" id="111"/>
-									<Events>
-										<Event name="OnChange">ОтборСостоянияЗадачПриИзменении</Event>
-									</Events>
-								</RadioButtonField>
+								<UsualGroup name="ГруппаУправлениеСписком" id="175">
+									<Group>AlwaysHorizontal</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаУправлениеСпискомРасширеннаяПодсказка" id="176"/>
+									<ChildItems>
+										<Button name="СписокНоваяЗадача" id="60">
+											<Type>UsualButton</Type>
+											<Representation>PictureAndText</Representation>
+											<Height>1</Height>
+											<GroupHorizontalAlign>Left</GroupHorizontalAlign>
+											<CommandName>Form.Command.НоваяЗадача</CommandName>
+											<Picture>
+												<xr:Ref>CommonPicture.БожьяКоровка</xr:Ref>
+												<xr:LoadTransparent>false</xr:LoadTransparent>
+											</Picture>
+											<ExtendedTooltip name="СписокНоваяЗадачаРасширеннаяПодсказка" id="61"/>
+										</Button>
+										<PictureDecoration name="ДекорацияРазделитель1" id="183">
+											<Width>3</Width>
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<MaxWidth>3</MaxWidth>
+											<Height>1</Height>
+											<HorizontalStretch>true</HorizontalStretch>
+											<GroupHorizontalAlign>Left</GroupHorizontalAlign>
+											<ContextMenu name="ДекорацияРазделитель1КонтекстноеМеню" id="184"/>
+											<ExtendedTooltip name="ДекорацияРазделитель1РасширеннаяПодсказка" id="185"/>
+										</PictureDecoration>
+										<RadioButtonField name="ОтборСостоянияЗадач" id="109">
+											<DataPath>ОтборСостоянияЗадач</DataPath>
+											<TitleLocation>None</TitleLocation>
+											<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+											<RadioButtonType>Tumbler</RadioButtonType>
+											<ChoiceList>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>КВыполнению</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xr:DesignTimeRef">Enum.СостоянияЗадач.EnumValue.КВыполнению</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>ОжидаетПроверки</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xr:DesignTimeRef">Enum.СостоянияЗадач.EnumValue.ОжидаетПроверки</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Выполнено</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xr:DesignTimeRef">Enum.СостоянияЗадач.EnumValue.Выполнено</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Отменено</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xr:DesignTimeRef">Enum.СостоянияЗадач.EnumValue.Отменено</Value>
+													</xr:Value>
+												</xr:Item>
+											</ChoiceList>
+											<ContextMenu name="ОтборСостоянияЗадачКонтекстноеМеню" id="110"/>
+											<ExtendedTooltip name="ОтборСостоянияЗадачРасширеннаяПодсказка" id="111"/>
+											<Events>
+												<Event name="OnChange">ОтборСостоянияЗадачПриИзменении</Event>
+											</Events>
+										</RadioButtonField>
+										<PictureDecoration name="ДекорацияРазделитель2" id="186">
+											<Width>3</Width>
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<MaxWidth>3</MaxWidth>
+											<Height>1</Height>
+											<HorizontalStretch>true</HorizontalStretch>
+											<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+											<ContextMenu name="ДекорацияРазделитель2КонтекстноеМеню" id="187"/>
+											<ExtendedTooltip name="ДекорацияРазделитель2РасширеннаяПодсказка" id="188"/>
+										</PictureDecoration>
+										<SearchStringAddition name="ДополнениеПоискПоСпискуЗадач" id="177">
+											<AdditionSource>
+												<Item>Список</Item>
+												<Type>SearchStringRepresentation</Type>
+											</AdditionSource>
+											<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+											<ContextMenu name="ДополнениеПоискПоСпискуЗадачКонтекстноеМеню" id="178"/>
+											<ExtendedTooltip name="ДополнениеПоискПоСпискуЗадачРасширеннаяПодсказка" id="179"/>
+										</SearchStringAddition>
+									</ChildItems>
+								</UsualGroup>
 								<Table name="Список" id="1">
 									<UseAlternationRowColor>true</UseAlternationRowColor>
 									<EnableStartDrag>true</EnableStartDrag>
@@ -220,18 +270,7 @@
 									<UpdateOnDataChange>Auto</UpdateOnDataChange>
 									<ContextMenu name="СписокКонтекстноеМеню" id="2"/>
 									<AutoCommandBar name="СписокКоманднаяПанель" id="3">
-										<ChildItems>
-											<Button name="СписокНоваяЗадача" id="60">
-												<Type>CommandBarButton</Type>
-												<Representation>PictureAndText</Representation>
-												<CommandName>Form.Command.НоваяЗадача</CommandName>
-												<Picture>
-													<xr:Ref>CommonPicture.БожьяКоровка</xr:Ref>
-													<xr:LoadTransparent>false</xr:LoadTransparent>
-												</Picture>
-												<ExtendedTooltip name="СписокНоваяЗадачаРасширеннаяПодсказка" id="61"/>
-											</Button>
-										</ChildItems>
+										<Autofill>false</Autofill>
 									</AutoCommandBar>
 									<ExtendedTooltip name="СписокРасширеннаяПодсказка" id="4"/>
 									<SearchStringAddition name="СписокСтрокаПоиска" id="5">
@@ -287,6 +326,12 @@
 															<v8:content>Срок, дн.</v8:content>
 														</v8:item>
 													</Title>
+													<Format>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>ЧН=0</v8:content>
+														</v8:item>
+													</Format>
 													<ContextMenu name="СписокДнейВРаботеКонтекстноеМеню" id="131"/>
 													<ExtendedTooltip name="СписокДнейВРаботеРасширеннаяПодсказка" id="132"/>
 												</LabelField>
@@ -339,26 +384,65 @@
 							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="ГруппаДанныеТекущейЗадачиРасширеннаяПодсказка" id="87"/>
 							<ChildItems>
-								<InputField name="СписокБлокПрограммногоКода" id="91">
-									<DataPath>Items.Список.CurrentData.БлокПрограммногоКода</DataPath>
-									<AutoMaxWidth>false</AutoMaxWidth>
-									<Height>6</Height>
-									<AutoMaxHeight>false</AutoMaxHeight>
-									<MaxHeight>6</MaxHeight>
-									<MultiLine>true</MultiLine>
-									<ContextMenu name="СписокБлокПрограммногоКодаКонтекстноеМеню" id="92"/>
-									<ExtendedTooltip name="СписокБлокПрограммногоКодаРасширеннаяПодсказка" id="93"/>
+								<InputField name="СписокНаименованиеПоТекущейЗадаче" id="164">
+									<DataPath>Items.Список.CurrentData.Наименование</DataPath>
+									<ContextMenu name="СписокНаименованиеПоТекущейЗадачеКонтекстноеМеню" id="165"/>
+									<ExtendedTooltip name="СписокНаименованиеПоТекущейЗадачеРасширеннаяПодсказка" id="166"/>
 								</InputField>
-								<InputField name="СписокКомментарий" id="106">
-									<DataPath>Items.Список.CurrentData.Комментарий</DataPath>
-									<AutoMaxWidth>false</AutoMaxWidth>
-									<Height>2</Height>
-									<AutoMaxHeight>false</AutoMaxHeight>
-									<MaxHeight>2</MaxHeight>
-									<MultiLine>true</MultiLine>
-									<ContextMenu name="СписокКомментарийКонтекстноеМеню" id="107"/>
-									<ExtendedTooltip name="СписокКомментарийРасширеннаяПодсказка" id="108"/>
-								</InputField>
+								<UsualGroup name="ГруппаДатыПоТекущейЗадаче" id="173">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа даты по текущей задаче</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа даты по текущей задаче</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>AlwaysHorizontal</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаДатыПоТекущейЗадачеРасширеннаяПодсказка" id="174"/>
+									<ChildItems>
+										<InputField name="СписокДнейВРаботеПоТекущейЗадаче" id="161">
+											<DataPath>Items.Список.CurrentData.ДнейВРаботе</DataPath>
+											<Width>3</Width>
+											<ContextMenu name="СписокДнейВРаботеПоТекущейЗадачеКонтекстноеМеню" id="162"/>
+											<ExtendedTooltip name="СписокДнейВРаботеПоТекущейЗадачеРасширеннаяПодсказка" id="163"/>
+										</InputField>
+										<LabelField name="СписокТипЗадачиПоТекущейЗадаче" id="170">
+											<DataPath>Items.Список.CurrentData.ТипЗадачи</DataPath>
+											<Hiperlink>true</Hiperlink>
+											<ContextMenu name="СписокТипЗадачиПоТекущейЗадачеКонтекстноеМеню" id="171"/>
+											<ExtendedTooltip name="СписокТипЗадачиПоТекущейЗадачеРасширеннаяПодсказка" id="172"/>
+										</LabelField>
+									</ChildItems>
+								</UsualGroup>
+								<LabelField name="СписокДатаСозданияПоТекущейЗадаче" id="88">
+									<DataPath>Items.Список.CurrentData.ДатаСоздания</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Создана</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="СписокДатаСозданияПоТекущейЗадачеКонтекстноеМеню" id="89"/>
+									<ExtendedTooltip name="СписокДатаСозданияПоТекущейЗадачеРасширеннаяПодсказка" id="90"/>
+								</LabelField>
+								<LabelField name="СписокДатаЗавершенияПоТекущейЗадаче" id="119">
+									<DataPath>Items.Список.CurrentData.ДатаЗавершения</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Завершена</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="СписокДатаЗавершенияПоТекущейЗадачеКонтекстноеМеню" id="120"/>
+									<ExtendedTooltip name="СписокДатаЗавершенияПоТекущейЗадачеРасширеннаяПодсказка" id="121"/>
+								</LabelField>
 								<UsualGroup name="ТекущаяЗадачаПанельУправления" id="102">
 									<Group>AlwaysHorizontal</Group>
 									<Representation>None</Representation>
@@ -449,35 +533,51 @@
 										</UsualGroup>
 									</ChildItems>
 								</UsualGroup>
-								<LabelField name="СписокДатаСоздания" id="88">
-									<DataPath>Items.Список.CurrentData.ДатаСоздания</DataPath>
-									<Title>
+								<InputField name="СписокОписаниеПоТекущейЗадаче" id="167">
+									<DataPath>Items.Список.CurrentData.Описание</DataPath>
+									<TitleLocation>None</TitleLocation>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<InputHint>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
-											<v8:content>Создана</v8:content>
+											<v8:content>Описание задачи</v8:content>
 										</v8:item>
-									</Title>
-									<ContextMenu name="СписокДатаСозданияКонтекстноеМеню" id="89"/>
-									<ExtendedTooltip name="СписокДатаСозданияРасширеннаяПодсказка" id="90"/>
-								</LabelField>
-								<LabelField name="СписокДатаЗавершения" id="119">
-									<DataPath>Items.Список.CurrentData.ДатаЗавершения</DataPath>
-									<Title>
+									</InputHint>
+									<ContextMenu name="СписокОписаниеПоТекущейЗадачеКонтекстноеМеню" id="168"/>
+									<ExtendedTooltip name="СписокОписаниеПоТекущейЗадачеРасширеннаяПодсказка" id="169"/>
+								</InputField>
+								<InputField name="СписокБлокПрограммногоКодаПоТекущейЗадаче" id="91">
+									<DataPath>Items.Список.CurrentData.БлокПрограммногоКода</DataPath>
+									<TitleLocation>None</TitleLocation>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MultiLine>true</MultiLine>
+									<HeightControlVariant>UseContentHeight</HeightControlVariant>
+									<InputHint>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
-											<v8:content>Завершена</v8:content>
+											<v8:content>Последнее упоминание в коде</v8:content>
 										</v8:item>
-									</Title>
-									<ContextMenu name="СписокДатаЗавершенияКонтекстноеМеню" id="120"/>
-									<ExtendedTooltip name="СписокДатаЗавершенияРасширеннаяПодсказка" id="121"/>
-								</LabelField>
+									</InputHint>
+									<ContextMenu name="СписокБлокПрограммногоКодаПоТекущейЗадачеКонтекстноеМеню" id="92"/>
+									<ExtendedTooltip name="СписокБлокПрограммногоКодаПоТекущейЗадачеРасширеннаяПодсказка" id="93"/>
+								</InputField>
+								<InputField name="СписокКомментарийПоТекущейЗадаче" id="106">
+									<DataPath>Items.Список.CurrentData.Комментарий</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<TitleLocation>None</TitleLocation>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MultiLine>true</MultiLine>
+									<InputHint>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Комментарий</v8:content>
+										</v8:item>
+									</InputHint>
+									<ContextMenu name="СписокКомментарийПоТекущейЗадачеКонтекстноеМеню" id="107"/>
+									<ExtendedTooltip name="СписокКомментарийПоТекущейЗадачеРасширеннаяПодсказка" id="108"/>
+								</InputField>
 							</ChildItems>
 						</UsualGroup>
-						<PictureDecoration name="ДекорацияРазделитель" id="80">
-							<VerticalStretch>false</VerticalStretch>
-							<ContextMenu name="ДекорацияРазделительКонтекстноеМеню" id="81"/>
-							<ExtendedTooltip name="ДекорацияРазделительРасширеннаяПодсказка" id="82"/>
-						</PictureDecoration>
 						<UsualGroup name="Настройки" id="72">
 							<Title>
 								<v8:item>
@@ -494,6 +594,13 @@
 							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="НастройкиРасширеннаяПодсказка" id="73"/>
 							<ChildItems>
+								<PictureDecoration name="ДекорацияРазделитель" id="80">
+									<Visible>false</Visible>
+									<Height>1</Height>
+									<VerticalStretch>true</VerticalStretch>
+									<ContextMenu name="ДекорацияРазделительКонтекстноеМеню" id="81"/>
+									<ExtendedTooltip name="ДекорацияРазделительРасширеннаяПодсказка" id="82"/>
+								</PictureDecoration>
 								<Button name="СправочникКонфигурацииОткрытьСписок" id="76">
 									<Type>Hyperlink</Type>
 									<GroupHorizontalAlign>Right</GroupHorizontalAlign>
