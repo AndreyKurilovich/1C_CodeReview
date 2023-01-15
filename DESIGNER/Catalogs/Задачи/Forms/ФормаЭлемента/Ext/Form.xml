@@ -129,6 +129,12 @@
 									<ChildItems>
 										<InputField name="Конфигурация" id="41">
 											<DataPath>Объект.Конфигурация</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Проект</v8:content>
+												</v8:item>
+											</Title>
 											<ContextMenu name="КонфигурацияКонтекстноеМеню" id="42"/>
 											<ExtendedTooltip name="КонфигурацияРасширеннаяПодсказка" id="43"/>
 										</InputField>

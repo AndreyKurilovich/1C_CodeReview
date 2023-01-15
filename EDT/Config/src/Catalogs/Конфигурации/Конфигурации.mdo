@@ -165,25 +165,6 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
-  <attributes uuid="4d387ff8-2042-482d-872b-def5839f5406">
-    <name>ОбработанныйКоммит</name>
-    <synonym>
-      <key>ru</key>
-      <value>Обработанный коммит</value>
-    </synonym>
-    <comment>Последний обработанный коммит</comment>
-    <type>
-      <types>String</types>
-      <stringQualifiers>
-        <length>8</length>
-      </stringQualifiers>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
   <attributes uuid="589ba74b-32f5-44d3-98eb-c7bea841477b">
     <name>ПутьРепозитория</name>
     <synonym>
