@@ -53,7 +53,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Role.ПолныеПрава</xr:Item>
 			</DefaultRoles>
 			<Vendor>Курилович Андрей</Vendor>
-			<Version>1.1.5.1</Version>
+			<Version>1.2.1.1</Version>
 			<UpdateCatalogAddress/>
 			<IncludeHelpInContents>false</IncludeHelpInContents>
 			<UseManagedFormInOrdinaryApplication>false</UseManagedFormInOrdinaryApplication>
@@ -202,7 +202,7 @@
 			<MobileApplicationURLs/>
 			<MainClientApplicationWindowMode>Normal</MainClientApplicationWindowMode>
 			<DefaultInterface/>
-			<DefaultStyle/>
+			<DefaultStyle>Style.СтильКастом</DefaultStyle>
 			<DefaultLanguage>Language.Русский</DefaultLanguage>
 			<BriefInformation/>
 			<DetailedInformation/>
@@ -220,6 +220,7 @@
 		<ChildObjects>
 			<Language>Русский</Language>
 			<Subsystem>КодРевью</Subsystem>
+			<Style>СтильКастом</Style>
 			<CommonPicture>БожьяКоровка</CommonPicture>
 			<CommonPicture>КоллекцияЗаметки</CommonPicture>
 			<CommonPicture>Ракета</CommonPicture>

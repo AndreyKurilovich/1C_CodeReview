@@ -21,6 +21,7 @@
   <isPointsDesign>true</isPointsDesign>
   <curSeries>-1</curSeries>
   <chartType>Pie</chartType>
+  <circleLabelType>Series</circleLabelType>
   <labelsDelimiter>, </labelsDelimiter>
   <labelsColor xsi:type="core:ColorRef">
     <color>Style.FormTextColor</color>
