@@ -1793,7 +1793,7 @@
                 <choiceList>
                   <presentation>
                     <key>ru</key>
-                    <value>Тяп ляп</value>
+                    <value>Тяп-ляп</value>
                   </presentation>
                   <value xsi:type="core:ReferenceValue">
                     <value>Enum.КачествоРешенияЗадачи.EnumValue.ТяпЛяп</value>
@@ -2102,46 +2102,6 @@
       <items xsi:type="form:FormGroup">
         <name>Настройки</name>
         <id>72</id>
-        <items xsi:type="form:Decoration">
-          <name>ДекорацияРазделитель</name>
-          <id>80</id>
-          <enabled>true</enabled>
-          <userVisible>
-            <common>true</common>
-          </userVisible>
-          <extendedTooltip>
-            <name>ДекорацияРазделительРасширеннаяПодсказка</name>
-            <id>82</id>
-            <visible>true</visible>
-            <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
-            <type>Label</type>
-            <autoMaxWidth>true</autoMaxWidth>
-            <autoMaxHeight>true</autoMaxHeight>
-            <extInfo xsi:type="form:LabelDecorationExtInfo">
-              <horizontalAlign>Left</horizontalAlign>
-            </extInfo>
-          </extendedTooltip>
-          <contextMenu>
-            <name>ДекорацияРазделительКонтекстноеМеню</name>
-            <id>81</id>
-            <visible>true</visible>
-            <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
-            <autoFill>true</autoFill>
-          </contextMenu>
-          <autoMaxWidth>true</autoMaxWidth>
-          <height>1</height>
-          <autoMaxHeight>true</autoMaxHeight>
-          <verticalStretch>true</verticalStretch>
-          <extInfo xsi:type="form:PictureDecorationExtInfo">
-            <fileDragMode>AsFileRef</fileDragMode>
-          </extInfo>
-        </items>
         <items xsi:type="form:Button">
           <name>СправочникКонфигурацииОткрытьСписок</name>
           <id>76</id>
@@ -2310,7 +2270,7 @@
         </extendedTooltip>
         <type>UsualGroup</type>
         <extInfo xsi:type="form:UsualGroupExtInfo">
-          <group>Vertical</group>
+          <group>AlwaysHorizontal</group>
           <horizontalAlign>Right</horizontalAlign>
           <verticalAlign>Bottom</verticalAlign>
           <behavior>Auto</behavior>

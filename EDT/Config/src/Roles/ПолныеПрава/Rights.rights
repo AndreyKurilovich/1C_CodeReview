@@ -122,6 +122,10 @@
 			<value>true</value>
 		</right>
 		<right>
+			<name>AnalyticsSystemClient</name>
+			<value>true</value>
+		</right>
+		<right>
 			<name>ConfigurationExtensionsAdministration</name>
 			<value>false</value>
 		</right>
