@@ -531,7 +531,7 @@
 																<Presentation>
 																	<v8:item>
 																		<v8:lang>ru</v8:lang>
-																		<v8:content>Тяп ляп</v8:content>
+																		<v8:content>Тяп-ляп</v8:content>
 																	</v8:item>
 																</Presentation>
 																<Value xsi:type="xr:DesignTimeRef">Enum.КачествоРешенияЗадачи.EnumValue.ТяпЛяп</Value>
@@ -616,20 +616,13 @@
 							</Title>
 							<GroupHorizontalAlign>Right</GroupHorizontalAlign>
 							<GroupVerticalAlign>Bottom</GroupVerticalAlign>
-							<Group>Vertical</Group>
+							<Group>AlwaysHorizontal</Group>
 							<HorizontalAlign>Right</HorizontalAlign>
 							<VerticalAlign>Bottom</VerticalAlign>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="НастройкиРасширеннаяПодсказка" id="73"/>
 							<ChildItems>
-								<PictureDecoration name="ДекорацияРазделитель" id="80">
-									<Visible>false</Visible>
-									<Height>1</Height>
-									<VerticalStretch>true</VerticalStretch>
-									<ContextMenu name="ДекорацияРазделительКонтекстноеМеню" id="81"/>
-									<ExtendedTooltip name="ДекорацияРазделительРасширеннаяПодсказка" id="82"/>
-								</PictureDecoration>
 								<Button name="СправочникКонфигурацииОткрытьСписок" id="76">
 									<Type>Hyperlink</Type>
 									<GroupHorizontalAlign>Right</GroupHorizontalAlign>
@@ -1038,7 +1031,7 @@
 				<d4p1:curSeries>-1</d4p1:curSeries>
 				<d4p1:curPoint>0</d4p1:curPoint>
 				<d4p1:chartType>Pie</d4p1:chartType>
-				<d4p1:circleLabelType>None</d4p1:circleLabelType>
+				<d4p1:circleLabelType>Series</d4p1:circleLabelType>
 				<d4p1:labelsDelimiter>, </d4p1:labelsDelimiter>
 				<d4p1:labelsLocation>Edge</d4p1:labelsLocation>
 				<d4p1:lbFormat/>
