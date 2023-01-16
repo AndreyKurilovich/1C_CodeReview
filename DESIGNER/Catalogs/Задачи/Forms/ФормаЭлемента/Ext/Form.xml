@@ -54,60 +54,109 @@
 									<v8:content>Группа шапка</v8:content>
 								</v8:item>
 							</ToolTip>
-							<Group>AlwaysHorizontal</Group>
+							<Group>Vertical</Group>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="ГруппаШапкаРасширеннаяПодсказка" id="84"/>
 							<ChildItems>
-								<UsualGroup name="ГруппаПраво" id="79">
-									<Group>Vertical</Group>
+								<UsualGroup name="ГруппаОсновныеНастройки" id="107">
+									<Group>AlwaysHorizontal</Group>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
-									<ExtendedTooltip name="ГруппаПравоРасширеннаяПодсказка" id="80"/>
+									<ExtendedTooltip name="ГруппаОсновныеНастройкиРасширеннаяПодсказка" id="108"/>
 									<ChildItems>
-										<InputField name="ТипЗадачи" id="104">
-											<DataPath>Объект.ТипЗадачи</DataPath>
-											<ContextMenu name="ТипЗадачиКонтекстноеМеню" id="105"/>
-											<ExtendedTooltip name="ТипЗадачиРасширеннаяПодсказка" id="106"/>
-											<Events>
-												<Event name="OnChange">ТипЗадачиПриИзменении</Event>
-											</Events>
-										</InputField>
-										<UsualGroup name="ГруппаДатаНазвание" id="77">
+										<UsualGroup name="ГруппаПраво" id="79">
 											<Group>Vertical</Group>
 											<Representation>None</Representation>
 											<ShowTitle>false</ShowTitle>
-											<ExtendedTooltip name="ГруппаДатаНазваниеРасширеннаяПодсказка" id="78"/>
+											<ExtendedTooltip name="ГруппаПравоРасширеннаяПодсказка" id="80"/>
 											<ChildItems>
-												<InputField name="Наименование" id="49">
-													<DataPath>Объект.Description</DataPath>
-													<AutoMaxWidth>false</AutoMaxWidth>
-													<ContextMenu name="НаименованиеКонтекстноеМеню" id="50"/>
-													<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="51"/>
-												</InputField>
-											</ChildItems>
-										</UsualGroup>
-										<UsualGroup name="ГруппаСостояние" id="94">
-											<Group>AlwaysHorizontal</Group>
-											<Representation>None</Representation>
-											<ShowTitle>false</ShowTitle>
-											<ExtendedTooltip name="ГруппаСостояниеРасширеннаяПодсказка" id="95"/>
-											<ChildItems>
-												<PictureDecoration name="КартинкаАктуальностьЗадачи" id="85">
-													<Title formatted="false">
+												<InputField name="ТипЗадачи" id="104">
+													<DataPath>Объект.ТипЗадачи</DataPath>
+													<Title>
 														<v8:item>
 															<v8:lang>ru</v8:lang>
-															<v8:content>Картинка актуальность задачи</v8:content>
+															<v8:content>Тип</v8:content>
 														</v8:item>
 													</Title>
-													<GroupVerticalAlign>Center</GroupVerticalAlign>
-													<Picture>
-														<xr:Ref>StdPicture.AppearanceCross</xr:Ref>
-														<xr:LoadTransparent>true</xr:LoadTransparent>
-													</Picture>
-													<ContextMenu name="КартинкаАктуальностьЗадачиКонтекстноеМеню" id="86"/>
-													<ExtendedTooltip name="КартинкаАктуальностьЗадачиРасширеннаяПодсказка" id="87"/>
-												</PictureDecoration>
+													<ContextMenu name="ТипЗадачиКонтекстноеМеню" id="105"/>
+													<ExtendedTooltip name="ТипЗадачиРасширеннаяПодсказка" id="106"/>
+													<Events>
+														<Event name="OnChange">ТипЗадачиПриИзменении</Event>
+													</Events>
+												</InputField>
+												<UsualGroup name="ГруппаДатаНазвание" id="77">
+													<Group>Vertical</Group>
+													<Representation>None</Representation>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ГруппаДатаНазваниеРасширеннаяПодсказка" id="78"/>
+													<ChildItems>
+														<InputField name="Наименование" id="49">
+															<DataPath>Объект.Description</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Имя</v8:content>
+																</v8:item>
+															</Title>
+															<ContextMenu name="НаименованиеКонтекстноеМеню" id="50"/>
+															<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="51"/>
+														</InputField>
+													</ChildItems>
+												</UsualGroup>
+												<UsualGroup name="ГруппаСостояние" id="94">
+													<Group>AlwaysHorizontal</Group>
+													<Representation>None</Representation>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ГруппаСостояниеРасширеннаяПодсказка" id="95"/>
+													<ChildItems>
+														<LabelDecoration name="НадписьТекущееСостояниеИсходногоКода" id="109">
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Есть в исходном коде:</v8:content>
+																</v8:item>
+															</Title>
+															<ContextMenu name="НадписьТекущееСостояниеИсходногоКодаКонтекстноеМеню" id="110"/>
+															<ExtendedTooltip name="НадписьТекущееСостояниеИсходногоКодаРасширеннаяПодсказка" id="111"/>
+														</LabelDecoration>
+														<PictureDecoration name="КартинкаАктуальностьЗадачи" id="85">
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Картинка актуальность задачи</v8:content>
+																</v8:item>
+															</Title>
+															<GroupVerticalAlign>Center</GroupVerticalAlign>
+															<Picture>
+																<xr:Ref>StdPicture.AppearanceCross</xr:Ref>
+																<xr:LoadTransparent>true</xr:LoadTransparent>
+															</Picture>
+															<ContextMenu name="КартинкаАктуальностьЗадачиКонтекстноеМеню" id="86"/>
+															<ExtendedTooltip name="КартинкаАктуальностьЗадачиРасширеннаяПодсказка" id="87"/>
+														</PictureDecoration>
+													</ChildItems>
+												</UsualGroup>
+											</ChildItems>
+										</UsualGroup>
+										<UsualGroup name="ГруппаЛево" id="81">
+											<Width>30</Width>
+											<Group>Vertical</Group>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаЛевоРасширеннаяПодсказка" id="82"/>
+											<ChildItems>
+												<InputField name="Конфигурация" id="41">
+													<DataPath>Объект.Конфигурация</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Проект</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="КонфигурацияКонтекстноеМеню" id="42"/>
+													<ExtendedTooltip name="КонфигурацияРасширеннаяПодсказка" id="43"/>
+												</InputField>
 												<InputField name="Состояние" id="7">
 													<DataPath>Объект.Состояние</DataPath>
 													<EditMode>EnterOnInput</EditMode>
@@ -117,122 +166,104 @@
 														<Event name="OnChange">СостояниеПриИзменении</Event>
 													</Events>
 												</InputField>
+												<RadioButtonField name="КачествоРешения" id="101">
+													<DataPath>Объект.КачествоРешения</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Сделано</v8:content>
+														</v8:item>
+													</Title>
+													<RadioButtonType>Tumbler</RadioButtonType>
+													<EqualColumnsWidth>true</EqualColumnsWidth>
+													<ChoiceList>
+														<xr:Item>
+															<xr:Presentation/>
+															<xr:CheckState>0</xr:CheckState>
+															<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																<Presentation>
+																	<v8:item>
+																		<v8:lang>ru</v8:lang>
+																		<v8:content>Круто</v8:content>
+																	</v8:item>
+																</Presentation>
+																<Value xsi:type="xr:DesignTimeRef">Enum.КачествоРешенияЗадачи.EnumValue.Великолепно</Value>
+															</xr:Value>
+														</xr:Item>
+														<xr:Item>
+															<xr:Presentation/>
+															<xr:CheckState>0</xr:CheckState>
+															<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																<Presentation>
+																	<v8:item>
+																		<v8:lang>ru</v8:lang>
+																		<v8:content>Среднее</v8:content>
+																	</v8:item>
+																</Presentation>
+																<Value xsi:type="xr:DesignTimeRef">Enum.КачествоРешенияЗадачи.EnumValue.Удовлетворительно</Value>
+															</xr:Value>
+														</xr:Item>
+														<xr:Item>
+															<xr:Presentation/>
+															<xr:CheckState>0</xr:CheckState>
+															<xr:Value xsi:type="FormChoiceListDesTimeValue">
+																<Presentation>
+																	<v8:item>
+																		<v8:lang>ru</v8:lang>
+																		<v8:content>ТяпЛяп</v8:content>
+																	</v8:item>
+																</Presentation>
+																<Value xsi:type="xr:DesignTimeRef">Enum.КачествоРешенияЗадачи.EnumValue.ТяпЛяп</Value>
+															</xr:Value>
+														</xr:Item>
+													</ChoiceList>
+													<ContextMenu name="КачествоРешенияКонтекстноеМеню" id="102"/>
+													<ExtendedTooltip name="КачествоРешенияРасширеннаяПодсказка" id="103"/>
+												</RadioButtonField>
 											</ChildItems>
 										</UsualGroup>
 									</ChildItems>
 								</UsualGroup>
-								<UsualGroup name="ГруппаЛево" id="81">
-									<Group>Vertical</Group>
+								<UsualGroup name="ГруппаФайл" id="61">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа файл</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа файл</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>AlwaysHorizontal</Group>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
-									<ExtendedTooltip name="ГруппаЛевоРасширеннаяПодсказка" id="82"/>
+									<ExtendedTooltip name="ГруппаФайлРасширеннаяПодсказка" id="62"/>
 									<ChildItems>
-										<InputField name="Конфигурация" id="41">
-											<DataPath>Объект.Конфигурация</DataPath>
-											<Title>
-												<v8:item>
-													<v8:lang>ru</v8:lang>
-													<v8:content>Проект</v8:content>
-												</v8:item>
-											</Title>
-											<ContextMenu name="КонфигурацияКонтекстноеМеню" id="42"/>
-											<ExtendedTooltip name="КонфигурацияРасширеннаяПодсказка" id="43"/>
+										<InputField name="Файл" id="44">
+											<DataPath>Объект.Файл</DataPath>
+											<ChoiceParameterLinks>
+												<xr:Link>
+													<xr:Name>Отбор.Владелец</xr:Name>
+													<xr:DataPath xsi:type="xs:string">Объект.Конфигурация</xr:DataPath>
+													<xr:ValueChange>Clear</xr:ValueChange>
+												</xr:Link>
+											</ChoiceParameterLinks>
+											<ContextMenu name="ФайлКонтекстноеМеню" id="45"/>
+											<ExtendedTooltip name="ФайлРасширеннаяПодсказка" id="46"/>
 										</InputField>
-										<UsualGroup name="ГруппаФайл" id="61">
-											<Title>
-												<v8:item>
-													<v8:lang>ru</v8:lang>
-													<v8:content>Группа файл</v8:content>
-												</v8:item>
-											</Title>
-											<ToolTip>
-												<v8:item>
-													<v8:lang>ru</v8:lang>
-													<v8:content>Группа файл</v8:content>
-												</v8:item>
-											</ToolTip>
-											<Group>AlwaysHorizontal</Group>
-											<Representation>None</Representation>
-											<ShowTitle>false</ShowTitle>
-											<ExtendedTooltip name="ГруппаФайлРасширеннаяПодсказка" id="62"/>
-											<ChildItems>
-												<InputField name="Файл" id="44">
-													<DataPath>Объект.Файл</DataPath>
-													<ChoiceParameterLinks>
-														<xr:Link>
-															<xr:Name>Отбор.Владелец</xr:Name>
-															<xr:DataPath xsi:type="xs:string">Объект.Конфигурация</xr:DataPath>
-															<xr:ValueChange>Clear</xr:ValueChange>
-														</xr:Link>
-													</ChoiceParameterLinks>
-													<ContextMenu name="ФайлКонтекстноеМеню" id="45"/>
-													<ExtendedTooltip name="ФайлРасширеннаяПодсказка" id="46"/>
-												</InputField>
-												<Button name="ОткрытьФайл" id="63">
-													<Type>UsualButton</Type>
-													<Representation>Picture</Representation>
-													<CommandName>Form.Command.ОткрытьФайл</CommandName>
-													<Picture>
-														<xr:Ref>StdPicture.Find</xr:Ref>
-														<xr:LoadTransparent>true</xr:LoadTransparent>
-													</Picture>
-													<ExtendedTooltip name="ОткрытьФайлРасширеннаяПодсказка" id="64"/>
-												</Button>
-											</ChildItems>
-										</UsualGroup>
-										<RadioButtonField name="КачествоРешения" id="101">
-											<DataPath>Объект.КачествоРешения</DataPath>
-											<Title>
-												<v8:item>
-													<v8:lang>ru</v8:lang>
-													<v8:content>Сделано</v8:content>
-												</v8:item>
-											</Title>
-											<RadioButtonType>Tumbler</RadioButtonType>
-											<ChoiceList>
-												<xr:Item>
-													<xr:Presentation/>
-													<xr:CheckState>0</xr:CheckState>
-													<xr:Value xsi:type="FormChoiceListDesTimeValue">
-														<Presentation>
-															<v8:item>
-																<v8:lang>ru</v8:lang>
-																<v8:content>Круто</v8:content>
-															</v8:item>
-														</Presentation>
-														<Value xsi:type="xr:DesignTimeRef">Enum.КачествоРешенияЗадачи.EnumValue.Великолепно</Value>
-													</xr:Value>
-												</xr:Item>
-												<xr:Item>
-													<xr:Presentation/>
-													<xr:CheckState>0</xr:CheckState>
-													<xr:Value xsi:type="FormChoiceListDesTimeValue">
-														<Presentation>
-															<v8:item>
-																<v8:lang>ru</v8:lang>
-																<v8:content>Среднее</v8:content>
-															</v8:item>
-														</Presentation>
-														<Value xsi:type="xr:DesignTimeRef">Enum.КачествоРешенияЗадачи.EnumValue.Удовлетворительно</Value>
-													</xr:Value>
-												</xr:Item>
-												<xr:Item>
-													<xr:Presentation/>
-													<xr:CheckState>0</xr:CheckState>
-													<xr:Value xsi:type="FormChoiceListDesTimeValue">
-														<Presentation>
-															<v8:item>
-																<v8:lang>ru</v8:lang>
-																<v8:content>ТяпЛяп</v8:content>
-															</v8:item>
-														</Presentation>
-														<Value xsi:type="xr:DesignTimeRef">Enum.КачествоРешенияЗадачи.EnumValue.ТяпЛяп</Value>
-													</xr:Value>
-												</xr:Item>
-											</ChoiceList>
-											<ContextMenu name="КачествоРешенияКонтекстноеМеню" id="102"/>
-											<ExtendedTooltip name="КачествоРешенияРасширеннаяПодсказка" id="103"/>
-										</RadioButtonField>
+										<Button name="ОткрытьФайл" id="63">
+											<Type>UsualButton</Type>
+											<Representation>Picture</Representation>
+											<CommandName>Form.Command.ОткрытьФайл</CommandName>
+											<Picture>
+												<xr:Ref>StdPicture.Find</xr:Ref>
+												<xr:LoadTransparent>true</xr:LoadTransparent>
+											</Picture>
+											<ExtendedTooltip name="ОткрытьФайлРасширеннаяПодсказка" id="64"/>
+										</Button>
 									</ChildItems>
 								</UsualGroup>
 							</ChildItems>
