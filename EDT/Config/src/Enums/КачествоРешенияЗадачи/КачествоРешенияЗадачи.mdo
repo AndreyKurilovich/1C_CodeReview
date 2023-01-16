@@ -16,21 +16,21 @@
     <name>Великолепно</name>
     <synonym>
       <key>ru</key>
-      <value>Великолепно</value>
+      <value>Супер</value>
     </synonym>
   </enumValues>
   <enumValues uuid="17841da6-7e65-4a42-8a09-d1c4b4f2ad84">
     <name>Удовлетворительно</name>
     <synonym>
       <key>ru</key>
-      <value>Удовлетворительно</value>
+      <value>Средне</value>
     </synonym>
   </enumValues>
   <enumValues uuid="07019d06-e082-468b-8b57-39b74350f1f9">
     <name>ТяпЛяп</name>
     <synonym>
       <key>ru</key>
-      <value>Тяп ляп</value>
+      <value>Тяп-ляп</value>
     </synonym>
   </enumValues>
 </mdclass:Enum>

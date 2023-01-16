@@ -21,7 +21,7 @@
   <defaultRoles>Role.ИнтерактивноеОткрытиеВнешнихОтчетовИОбработок</defaultRoles>
   <defaultRoles>Role.ПолныеПрава</defaultRoles>
   <vendor>Курилович Андрей</vendor>
-  <version>1.1.5.1</version>
+  <version>1.2.1.1</version>
   <commonSettingsStorage>SettingsStorage.ОбщееХранилищеНастроек</commonSettingsStorage>
   <usedMobileApplicationFunctionalities>
     <functionality>
@@ -32,6 +32,7 @@
       <use>true</use>
     </functionality>
   </usedMobileApplicationFunctionalities>
+  <defaultStyle>Style.СтильКастом</defaultStyle>
   <defaultLanguage>Language.Русский</defaultLanguage>
   <logo/>
   <dataLockControlMode>Managed</dataLockControlMode>
@@ -46,6 +47,7 @@
     <languageCode>ru</languageCode>
   </languages>
   <subsystems>Subsystem.КодРевью</subsystems>
+  <styles>Style.СтильКастом</styles>
   <commonPictures>CommonPicture.БожьяКоровка</commonPictures>
   <commonPictures>CommonPicture.КоллекцияЗаметки</commonPictures>
   <commonPictures>CommonPicture.Ракета</commonPictures>
