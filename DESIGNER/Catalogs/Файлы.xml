@@ -294,7 +294,7 @@
 			<InputByString>
 				<xr:Field>Catalog.Файлы.StandardAttribute.Description</xr:Field>
 			</InputByString>
-			<SearchStringModeOnInputByString>Begin</SearchStringModeOnInputByString>
+			<SearchStringModeOnInputByString>AnyPart</SearchStringModeOnInputByString>
 			<FullTextSearchOnInputByString>DontUse</FullTextSearchOnInputByString>
 			<ChoiceDataGetModeOnInputByString>Directly</ChoiceDataGetModeOnInputByString>
 			<DefaultObjectForm>Catalog.Файлы.Form.ФормаЭлемента</DefaultObjectForm>
