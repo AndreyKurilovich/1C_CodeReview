@@ -166,7 +166,7 @@
     <type>
       <types>String</types>
       <stringQualifiers>
-        <length>200</length>
+        <length>400</length>
       </stringQualifiers>
     </type>
     <multiLine>true</multiLine>
@@ -174,9 +174,7 @@
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
     <fillChecking>ShowError</fillChecking>
-    <fillValue xsi:type="core:StringValue">
-      <value></value>
-    </fillValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
