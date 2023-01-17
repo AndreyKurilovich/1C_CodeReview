@@ -29,14 +29,7 @@ pipeline {
             steps {                   
                 
                 cmd("IF NOT EXIST ${WORKSPACE}\\Temp md ${WORKSPACE}\\Temp")
-                cmd("del ${WORKSPACE}\\Temp\\*.png")
                 
-                cmd("IF EXIST ${WORKSPACE}\\allure-results rmdir /s /q ${WORKSPACE}\\allure-results")
-                cmd("IF NOT EXIST ${WORKSPACE}\\allure-results md ${WORKSPACE}\\allure-results") 
-                
-                cmd("IF EXIST ${WORKSPACE}\\allure-report rmdir /s /q ${WORKSPACE}\\allure-report")
-                cmd("IF NOT EXIST ${WORKSPACE}\\allure-report md ${WORKSPACE}\\allure-report") 
-
             }
         } 
         
@@ -50,8 +43,8 @@ pipeline {
         stage ('Saving configuration') {
             steps {
                 cmd("echo Saving configuration")
-                cmd("vrunner load --src ${WORKSPACE}\\Temp\\1Cv8.cf --ibconnection ${ReliaseBaseConnection} ${ReliaseBaseAuthorization}")
-                cmd("vrunner updatedb --ibconnection ${ReliaseBaseConnection} ${ReliaseBaseAuthorization}")
+                cmd("vrunner load --src ${WORKSPACE}\\Temp\\1Cv8.cf --ibconnection ${WorkBaseConnection} ${WorkBaseAuthorization}")
+                cmd("vrunner updatedb --ibconnection ${WorkBaseConnection} ${WorkBaseAuthorization}")
             }  
         }  
 
@@ -74,8 +67,6 @@ pipeline {
 
         success {
             cmd("echo success")
-            cmd("vrunner load --src ${WORKSPACE}\\Temp\\1Cv8.cf --ibconnection ${WorkBaseConnection} ${WorkBaseAuthorization}")
-            cmd("vrunner updatedb --ibconnection ${WorkBaseConnection} ${WorkBaseAuthorization}")
         }
     }
 
