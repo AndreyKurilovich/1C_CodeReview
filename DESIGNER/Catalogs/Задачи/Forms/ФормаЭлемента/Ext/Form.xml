@@ -59,6 +59,48 @@
 							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="ГруппаШапкаРасширеннаяПодсказка" id="84"/>
 							<ChildItems>
+								<UsualGroup name="ГруппаФайл" id="61">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа файл</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа файл</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>AlwaysHorizontal</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаФайлРасширеннаяПодсказка" id="62"/>
+									<ChildItems>
+										<InputField name="Файл" id="44">
+											<DataPath>Объект.Файл</DataPath>
+											<ChoiceParameterLinks>
+												<xr:Link>
+													<xr:Name>Отбор.Владелец</xr:Name>
+													<xr:DataPath xsi:type="xs:string">Объект.Конфигурация</xr:DataPath>
+													<xr:ValueChange>Clear</xr:ValueChange>
+												</xr:Link>
+											</ChoiceParameterLinks>
+											<ContextMenu name="ФайлКонтекстноеМеню" id="45"/>
+											<ExtendedTooltip name="ФайлРасширеннаяПодсказка" id="46"/>
+										</InputField>
+										<Button name="ОткрытьФайл" id="63">
+											<Type>UsualButton</Type>
+											<Representation>Picture</Representation>
+											<CommandName>Form.Command.ОткрытьФайл</CommandName>
+											<Picture>
+												<xr:Ref>StdPicture.Find</xr:Ref>
+												<xr:LoadTransparent>true</xr:LoadTransparent>
+											</Picture>
+											<ExtendedTooltip name="ОткрытьФайлРасширеннаяПодсказка" id="64"/>
+										</Button>
+									</ChildItems>
+								</UsualGroup>
 								<UsualGroup name="ГруппаОсновныеНастройки" id="107">
 									<Group>AlwaysHorizontal</Group>
 									<Representation>None</Representation>
@@ -222,48 +264,6 @@
 												</RadioButtonField>
 											</ChildItems>
 										</UsualGroup>
-									</ChildItems>
-								</UsualGroup>
-								<UsualGroup name="ГруппаФайл" id="61">
-									<Title>
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>Группа файл</v8:content>
-										</v8:item>
-									</Title>
-									<ToolTip>
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>Группа файл</v8:content>
-										</v8:item>
-									</ToolTip>
-									<Group>AlwaysHorizontal</Group>
-									<Representation>None</Representation>
-									<ShowTitle>false</ShowTitle>
-									<ExtendedTooltip name="ГруппаФайлРасширеннаяПодсказка" id="62"/>
-									<ChildItems>
-										<InputField name="Файл" id="44">
-											<DataPath>Объект.Файл</DataPath>
-											<ChoiceParameterLinks>
-												<xr:Link>
-													<xr:Name>Отбор.Владелец</xr:Name>
-													<xr:DataPath xsi:type="xs:string">Объект.Конфигурация</xr:DataPath>
-													<xr:ValueChange>Clear</xr:ValueChange>
-												</xr:Link>
-											</ChoiceParameterLinks>
-											<ContextMenu name="ФайлКонтекстноеМеню" id="45"/>
-											<ExtendedTooltip name="ФайлРасширеннаяПодсказка" id="46"/>
-										</InputField>
-										<Button name="ОткрытьФайл" id="63">
-											<Type>UsualButton</Type>
-											<Representation>Picture</Representation>
-											<CommandName>Form.Command.ОткрытьФайл</CommandName>
-											<Picture>
-												<xr:Ref>StdPicture.Find</xr:Ref>
-												<xr:LoadTransparent>true</xr:LoadTransparent>
-											</Picture>
-											<ExtendedTooltip name="ОткрытьФайлРасширеннаяПодсказка" id="64"/>
-										</Button>
 									</ChildItems>
 								</UsualGroup>
 							</ChildItems>
