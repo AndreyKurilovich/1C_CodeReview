@@ -1,4 +1,8 @@
 pipeline {
+    
+    options {
+        disableConcurrentBuilds()
+    }
 
     agent {
         node {
@@ -13,14 +17,15 @@ pipeline {
         
         Sonar_login = "\"sonar.login=${env.Sonar_Token}\""
         
-        ReliaseBaseConnection       = "/F${ReliaseBasePach}"
-        ReliaseBaseAuthorization    = "--db-user ${env.ReliaseBaseUser} --db-pwd ${env.ReliaseBasePwd}"
+        ReliaseBaseConnection    = "/F${ReliaseBasePach}"
+        ReliaseBaseAuthorization = "--db-user ${env.ReliaseBaseUser} --db-pwd ${env.ReliaseBasePwd}"
 
         WorkBaseConnection       = "/S${WorkBasePach}"
         WorkBaseAuthorization    = "--db-user ${env.WorkBaseUser} --db-pwd ${env.WorkBasePwd}"
 
-        ACCBaseConnection           = "/F${env.ACCBasePach}"
-        ACCBaseAuthorization        = "--db-user ${env.ACCBaseUser} --db-pwd ${env.ACCBasePwd}"
+        ACCBaseConnection        = "/F${env.ACCBasePach}"
+        ACCBaseAuthorization     = "--db-user ${env.ACCBaseUser} --db-pwd ${env.ACCBasePwd}"
+        
     }    
 
     stages{ 
