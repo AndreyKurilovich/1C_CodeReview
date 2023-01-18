@@ -54,8 +54,8 @@
             <headerHorizontalAlign>Left</headerHorizontalAlign>
             <showInFooter>true</showInFooter>
             <extInfo xsi:type="form:InputFieldExtInfo">
-              <autoMaxWidth>true</autoMaxWidth>
               <autoMaxHeight>true</autoMaxHeight>
+              <horizontalStretch>true</horizontalStretch>
               <wrap>true</wrap>
               <chooseType>true</chooseType>
               <typeDomainEnabled>true</typeDomainEnabled>
@@ -115,6 +115,7 @@
             <key>ru</key>
             <value>Группа файл</value>
           </toolTip>
+          <horizontalStretch>true</horizontalStretch>
           <extendedTooltip>
             <name>ГруппаФайлРасширеннаяПодсказка</name>
             <id>62</id>
@@ -494,7 +495,9 @@
               <headerHorizontalAlign>Left</headerHorizontalAlign>
               <showInFooter>true</showInFooter>
               <extInfo xsi:type="form:InputFieldExtInfo">
+                <width>30</width>
                 <autoMaxWidth>true</autoMaxWidth>
+                <maxWidth>30</maxWidth>
                 <autoMaxHeight>true</autoMaxHeight>
                 <wrap>true</wrap>
                 <chooseType>true</chooseType>
@@ -548,7 +551,9 @@
               <headerHorizontalAlign>Left</headerHorizontalAlign>
               <showInFooter>true</showInFooter>
               <extInfo xsi:type="form:InputFieldExtInfo">
+                <width>30</width>
                 <autoMaxWidth>true</autoMaxWidth>
+                <maxWidth>30</maxWidth>
                 <autoMaxHeight>true</autoMaxHeight>
                 <wrap>true</wrap>
                 <chooseType>true</chooseType>
@@ -638,7 +643,6 @@
             <userVisible>
               <common>true</common>
             </userVisible>
-            <width>30</width>
             <extendedTooltip>
               <name>ГруппаЛевоРасширеннаяПодсказка</name>
               <id>82</id>
@@ -1081,57 +1085,11 @@
         </dataPath>
         <titleLocation>None</titleLocation>
         <items xsi:type="form:FormField">
-          <name>УсловияНомерСтроки</name>
-          <id>29</id>
-          <visible>true</visible>
-          <enabled>true</enabled>
-          <userVisible>
-            <common>true</common>
-          </userVisible>
-          <dataPath xsi:type="form:DataPath">
-            <segments>Объект.Условия.LineNumber</segments>
-          </dataPath>
-          <extendedTooltip>
-            <name>УсловияНомерСтрокиРасширеннаяПодсказка</name>
-            <id>31</id>
-            <visible>true</visible>
-            <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
-            <type>Label</type>
-            <autoMaxWidth>true</autoMaxWidth>
-            <autoMaxHeight>true</autoMaxHeight>
-            <extInfo xsi:type="form:LabelDecorationExtInfo">
-              <horizontalAlign>Left</horizontalAlign>
-            </extInfo>
-          </extendedTooltip>
-          <contextMenu>
-            <name>УсловияНомерСтрокиКонтекстноеМеню</name>
-            <id>30</id>
-            <visible>true</visible>
-            <enabled>true</enabled>
-            <userVisible>
-              <common>true</common>
-            </userVisible>
-            <autoFill>true</autoFill>
-          </contextMenu>
-          <type>LabelField</type>
-          <editMode>EnterOnInput</editMode>
-          <showInHeader>true</showInHeader>
-          <headerHorizontalAlign>Left</headerHorizontalAlign>
-          <showInFooter>true</showInFooter>
-          <extInfo xsi:type="form:LabelFieldExtInfo">
-            <autoMaxWidth>true</autoMaxWidth>
-            <autoMaxHeight>true</autoMaxHeight>
-          </extInfo>
-        </items>
-        <items xsi:type="form:FormField">
           <name>УсловияМеткаВКоде</name>
           <id>52</id>
           <title>
             <key>ru</key>
-            <value>Локация в коде</value>
+            <value>Локация</value>
           </title>
           <visible>true</visible>
           <enabled>true</enabled>

@@ -15,7 +15,7 @@
   <useStandardCommands>true</useStandardCommands>
   <inputByString>Catalog.Конфигурации.StandardAttribute.Description</inputByString>
   <inputByString>Catalog.Конфигурации.StandardAttribute.Code</inputByString>
-  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <searchStringModeOnInputByString>AnyPart</searchStringModeOnInputByString>
   <standardAttributes>
     <dataHistory>Use</dataHistory>
     <name>PredefinedDataName</name>
@@ -99,6 +99,16 @@
     <key>ru</key>
     <value>Конфигурация</value>
   </objectPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Конфигурации</value>
+  </listPresentation>
+  <explanation>
+    <key>ru</key>
+    <value>Конфигурации, в т.ч. расширения</value>
+  </explanation>
+  <hierarchical>true</hierarchical>
+  <hierarchyType>HierarchyOfItems</hierarchyType>
   <levelCount>2</levelCount>
   <foldersOnTop>true</foldersOnTop>
   <codeLength>3</codeLength>

@@ -34,10 +34,17 @@
     </synonym>
   </enumValues>
   <enumValues uuid="bf6ba561-c87a-406d-aff8-ee54c673bd36">
-    <name>НаСледующейСтроке</name>
+    <name>СледующаяСтрока</name>
     <synonym>
       <key>ru</key>
-      <value>На следующей строке</value>
+      <value>Следующая строка</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="b1b7e0e9-6ec6-46a8-bd68-b69ec3d70228">
+    <name>ПредыдущаяСтрока</name>
+    <synonym>
+      <key>ru</key>
+      <value>Предыдущая строка</value>
     </synonym>
   </enumValues>
   <enumValues uuid="f78586d0-3d8d-4a5f-b3c3-54b1e046ef39">

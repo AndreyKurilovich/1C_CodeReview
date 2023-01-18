@@ -76,11 +76,23 @@
 			</EnumValue>
 			<EnumValue uuid="bf6ba561-c87a-406d-aff8-ee54c673bd36">
 				<Properties>
-					<Name>НаСледующейСтроке</Name>
+					<Name>СледующаяСтрока</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>На следующей строке</v8:content>
+							<v8:content>Следующая строка</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="b1b7e0e9-6ec6-46a8-bd68-b69ec3d70228">
+				<Properties>
+					<Name>ПредыдущаяСтрока</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Предыдущая строка</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
