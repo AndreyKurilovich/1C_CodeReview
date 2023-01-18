@@ -374,11 +374,11 @@
 			</Attribute>
 			<Attribute uuid="e41e5289-23aa-41f5-a4dd-04c457d5433d">
 				<Properties>
-					<Name>КаталогИсходников</Name>
+					<Name>КаталогИсходныхФайлов</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Каталог исходников</v8:content>
+							<v8:content>Каталог исходных файлов</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
