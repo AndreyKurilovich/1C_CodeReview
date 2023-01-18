@@ -235,7 +235,7 @@
       </extInfo>
     </items>
     <items xsi:type="form:FormField">
-      <name>КаталогИсходников</name>
+      <name>КаталогИсходныхФайлов</name>
       <id>10</id>
       <visible>true</visible>
       <enabled>true</enabled>
@@ -243,10 +243,10 @@
         <common>true</common>
       </userVisible>
       <dataPath xsi:type="form:DataPath">
-        <segments>Объект.КаталогИсходников</segments>
+        <segments>Объект.КаталогИсходныхФайлов</segments>
       </dataPath>
       <extendedTooltip>
-        <name>КаталогИсходниковРасширеннаяПодсказка</name>
+        <name>КаталогИсходныхФайловРасширеннаяПодсказка</name>
         <id>12</id>
         <visible>true</visible>
         <enabled>true</enabled>
@@ -261,7 +261,7 @@
         </extInfo>
       </extendedTooltip>
       <contextMenu>
-        <name>КаталогИсходниковКонтекстноеМеню</name>
+        <name>КаталогИсходныхФайловКонтекстноеМеню</name>
         <id>11</id>
         <visible>true</visible>
         <enabled>true</enabled>

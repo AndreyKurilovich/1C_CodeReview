@@ -140,10 +140,10 @@
     <dataHistory>Use</dataHistory>
   </attributes>
   <attributes uuid="e41e5289-23aa-41f5-a4dd-04c457d5433d">
-    <name>КаталогИсходников</name>
+    <name>КаталогИсходныхФайлов</name>
     <synonym>
       <key>ru</key>
-      <value>Каталог исходников</value>
+      <value>Каталог исходных файлов</value>
     </synonym>
     <type>
       <types>String</types>

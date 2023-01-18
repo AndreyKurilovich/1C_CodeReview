@@ -59,8 +59,8 @@
 					<ContextMenu name="КаталогРепозиторияКонтекстноеМеню" id="8"/>
 					<ExtendedTooltip name="КаталогРепозиторияРасширеннаяПодсказка" id="9"/>
 				</InputField>
-				<InputField name="КаталогИсходников" id="10">
-					<DataPath>Объект.КаталогИсходников</DataPath>
+				<InputField name="КаталогИсходныхФайлов" id="10">
+					<DataPath>Объект.КаталогИсходныхФайлов</DataPath>
 					<EditMode>EnterOnInput</EditMode>
 					<InputHint>
 						<v8:item>
@@ -68,8 +68,8 @@
 							<v8:content>I:\Projects\1C_CodeReview\Repo\1C_CodeReview\DESIGNER</v8:content>
 						</v8:item>
 					</InputHint>
-					<ContextMenu name="КаталогИсходниковКонтекстноеМеню" id="11"/>
-					<ExtendedTooltip name="КаталогИсходниковРасширеннаяПодсказка" id="12"/>
+					<ContextMenu name="КаталогИсходныхФайловКонтекстноеМеню" id="11"/>
+					<ExtendedTooltip name="КаталогИсходныхФайловРасширеннаяПодсказка" id="12"/>
 				</InputField>
 				<InputField name="ИмяФайлаРезультата" id="13">
 					<DataPath>Объект.ИмяФайлаРезультата</DataPath>
