@@ -46,11 +46,11 @@
 		|"range": {|
 		|"start": {|
 		|"line": 10,|
-		|"character": 11|
+		|"character": 10|
 		|},|
 		|"end": {|
 		|"line": 10,|
-		|"character": 50|
+		|"character": 49|
 		|}|
 		|},|
 		|"severity": "Error",|
@@ -68,11 +68,11 @@
 		|"range": {|
 		|"start": {|
 		|"line": 4,|
-		|"character": 11|
+		|"character": 10|
 		|},|
 		|"end": {|
 		|"line": 4,|
-		|"character": 45|
+		|"character": 44|
 		|}|
 		|},|
 		|"severity": "Error",|
@@ -85,11 +85,11 @@
 		|"range": {|
 		|"start": {|
 		|"line": 15,|
-		|"character": 1|
+		|"character": 0|
 		|},|
 		|"end": {|
 		|"line": 15,|
-		|"character": 38|
+		|"character": 37|
 		|}|
 		|},|
 		|"severity": "Error",|
@@ -107,11 +107,11 @@
 		|"range": {|
 		|"start": {|
 		|"line": 6,|
-		|"character": 1|
+		|"character": 0|
 		|},|
 		|"end": {|
 		|"line": 6,|
-		|"character": 33|
+		|"character": 32|
 		|}|
 		|},|
 		|"severity": "Error",|
@@ -124,11 +124,11 @@
 		|"range": {|
 		|"start": {|
 		|"line": 64,|
-		|"character": 2|
+		|"character": 1|
 		|},|
 		|"end": {|
 		|"line": 64,|
-		|"character": 42|
+		|"character": 41|
 		|}|
 		|},|
 		|"severity": "Error",|
@@ -141,11 +141,11 @@
 		|"range": {|
 		|"start": {|
 		|"line": 158,|
-		|"character": 1|
+		|"character": 0|
 		|},|
 		|"end": {|
 		|"line": 158,|
-		|"character": 60|
+		|"character": 59|
 		|}|
 		|},|
 		|"severity": "Error",|
