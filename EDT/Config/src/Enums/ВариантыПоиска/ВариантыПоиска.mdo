@@ -42,4 +42,11 @@
       <value>Не содержит</value>
     </synonym>
   </enumValues>
+  <enumValues uuid="35c8edcf-6947-4ea1-aa9f-2ca20d025bfe">
+    <name>ПустаяСтрока</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пустая строка</value>
+    </synonym>
+  </enumValues>
 </mdclass:Enum>
