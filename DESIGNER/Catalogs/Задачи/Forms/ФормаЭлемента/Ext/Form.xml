@@ -340,6 +340,15 @@
 					<ChildItems>
 						<InputField name="ВариантУсловияПоиска" id="65">
 							<DataPath>Объект.ВариантУсловияПоиска</DataPath>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Последовательный поиск по строкам - поиск каждого условия подряд в файле, начиная со строки, указанной в поле "Начало поиска".
+
+Первая строка файла - фокус всегда на первую строку файла. </v8:content>
+								</v8:item>
+							</ToolTip>
+							<ToolTipRepresentation>Button</ToolTipRepresentation>
 							<ContextMenu name="ВариантУсловияПоискаКонтекстноеМеню" id="66"/>
 							<ExtendedTooltip name="ВариантУсловияПоискаРасширеннаяПодсказка" id="67"/>
 							<Events>
@@ -396,15 +405,25 @@
 									<CheckBoxType>Auto</CheckBoxType>
 									<ContextMenu name="УсловияМеткаВКодеКонтекстноеМеню" id="53"/>
 									<ExtendedTooltip name="УсловияМеткаВКодеРасширеннаяПодсказка" id="54"/>
+									<Events>
+										<Event name="OnChange">УсловияМеткаВКодеПриИзменении</Event>
+									</Events>
 								</CheckBoxField>
 								<InputField name="УсловияВидПострочногоПоиска" id="71">
 									<DataPath>Объект.Условия.ВидПострочногоПоиска</DataPath>
 									<Title>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
-											<v8:content>Начало поиска</v8:content>
+											<v8:content>Локация в файле</v8:content>
 										</v8:item>
 									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Тест</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ToolTipRepresentation>None</ToolTipRepresentation>
 									<EditMode>EnterOnInput</EditMode>
 									<ContextMenu name="УсловияВидПострочногоПоискаКонтекстноеМеню" id="72"/>
 									<ExtendedTooltip name="УсловияВидПострочногоПоискаРасширеннаяПодсказка" id="73"/>
@@ -414,6 +433,9 @@
 									<EditMode>EnterOnInput</EditMode>
 									<ContextMenu name="УсловияВариантПоискаКонтекстноеМеню" id="36"/>
 									<ExtendedTooltip name="УсловияВариантПоискаРасширеннаяПодсказка" id="37"/>
+									<Events>
+										<Event name="OnChange">УсловияВариантПоискаПриИзменении</Event>
+									</Events>
 								</InputField>
 								<InputField name="УсловияУсловие" id="38">
 									<DataPath>Объект.Условия.Условие</DataPath>
@@ -437,6 +459,53 @@
 			<MainAttribute>true</MainAttribute>
 			<SavedData>true</SavedData>
 		</Attribute>
+		<ConditionalAppearance>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>УсловияМеткаВКоде</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Объект.Условия.ВариантПоиска</dcsset:left>
+						<dcsset:comparisonType>NotEqual</dcsset:comparisonType>
+						<dcsset:right xsi:type="dcscor:DesignTimeValue">Перечисление.ВариантыПоиска.Содержит</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ТолькоПросмотр</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>Условия</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Объект.Условия.МеткаВКоде</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветФона</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">style:FieldAlternativeBackColor</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:use>false</dcscor:use>
+						<dcscor:parameter>ТолькоПросмотр</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+		</ConditionalAppearance>
 	</Attributes>
 	<Commands>
 		<Command name="ОпределитьПараметрыВИсходномКоде" id="1">
