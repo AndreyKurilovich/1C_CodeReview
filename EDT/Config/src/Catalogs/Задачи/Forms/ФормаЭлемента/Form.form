@@ -1029,6 +1029,13 @@
         <dataPath xsi:type="form:DataPath">
           <segments>Объект.ВариантУсловияПоиска</segments>
         </dataPath>
+        <toolTip>
+          <key>ru</key>
+          <value>Последовательный поиск по строкам - поиск каждого условия подряд в файле, начиная со строки, указанной в поле &quot;Начало поиска&quot;.
+
+Первая строка файла - фокус всегда на первую строку файла. </value>
+        </toolTip>
+        <toolTipRepresentation>Button</toolTipRepresentation>
         <handlers>
           <event>OnChange</event>
           <name>ВариантУсловияПоискаПриИзменении</name>
@@ -1099,6 +1106,10 @@
           <dataPath xsi:type="form:DataPath">
             <segments>Объект.Условия.МеткаВКоде</segments>
           </dataPath>
+          <handlers>
+            <event>OnChange</event>
+            <name>УсловияМеткаВКодеПриИзменении</name>
+          </handlers>
           <extendedTooltip>
             <name>УсловияМеткаВКодеРасширеннаяПодсказка</name>
             <id>54</id>
@@ -1136,7 +1147,7 @@
           <id>71</id>
           <title>
             <key>ru</key>
-            <value>Начало поиска</value>
+            <value>Локация в файле</value>
           </title>
           <visible>true</visible>
           <enabled>true</enabled>
@@ -1146,6 +1157,11 @@
           <dataPath xsi:type="form:DataPath">
             <segments>Объект.Условия.ВидПострочногоПоиска</segments>
           </dataPath>
+          <toolTip>
+            <key>ru</key>
+            <value>Тест</value>
+          </toolTip>
+          <toolTipRepresentation>None</toolTipRepresentation>
           <extendedTooltip>
             <name>УсловияВидПострочногоПоискаРасширеннаяПодсказка</name>
             <id>73</id>
@@ -1196,6 +1212,10 @@
           <dataPath xsi:type="form:DataPath">
             <segments>Объект.Условия.ВариантПоиска</segments>
           </dataPath>
+          <handlers>
+            <event>OnChange</event>
+            <name>УсловияВариантПоискаПриИзменении</name>
+          </handlers>
           <extendedTooltip>
             <name>УсловияВариантПоискаРасширеннаяПодсказка</name>
             <id>37</id>
