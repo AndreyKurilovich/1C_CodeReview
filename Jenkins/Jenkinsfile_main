@@ -77,6 +77,7 @@ pipeline {
         
         always {
             cmd("echo always")
+            cmd("call deployka session unlock -db ${env.WorkBaseName} ${WorkBaseAuthorizationRac} -rac ${rac} -lockuccode ${uccode} -ras ${ras}")
         }
 
         failure {
