@@ -59,7 +59,7 @@ pipeline {
         stage ('Saving configuration') {
             steps {
                 cmd("echo Saving configuration")
-                cmd("vrunner load --src ${WORKSPACE}\\Temp\\1Cv8.cf --ibconnection ${WorkBaseConnection} ${WorkBaseAuthorization}")
+                cmd("vrunner load --src ${WORKSPACE}\\Temp\\1Cv8.cf --ibconnection ${WorkBaseConnection} ${WorkBaseAuthorization} --uccode ${uccode}")
                 cmd("vrunner updatedb --ibconnection ${WorkBaseConnection} ${WorkBaseAuthorization}")
             }  
         } 
