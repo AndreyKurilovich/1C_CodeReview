@@ -60,7 +60,7 @@ pipeline {
             steps {
                 cmd("echo Saving configuration")
                 cmd("vrunner load --src ${WORKSPACE}\\Temp\\1Cv8.cf --ibconnection ${WorkBaseConnection} ${WorkBaseAuthorization} --uccode ${uccode}")
-                cmd("vrunner updatedb --ibconnection ${WorkBaseConnection} ${WorkBaseAuthorization}")
+                cmd("vrunner updatedb --ibconnection ${WorkBaseConnection} ${WorkBaseAuthorization} --uccode ${uccode}")
             }  
         } 
 
@@ -77,6 +77,7 @@ pipeline {
         
         always {
             cmd("echo always")
+            cmd("call deployka session unlock -db ${env.WorkBaseName} ${WorkBaseAuthorizationRac} -rac ${rac} -lockuccode ${uccode} -ras ${ras}")
         }
 
         failure {
