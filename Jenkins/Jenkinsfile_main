@@ -22,9 +22,14 @@ pipeline {
 
         WorkBaseConnection       = "/S${WorkBasePach}"
         WorkBaseAuthorization    = "--db-user ${env.WorkBaseUser} --db-pwd ${env.WorkBasePwd}"
+        WorkBaseAuthorizationRac = "-db-user ${env.WorkBaseUser} -db-pwd ${env.WorkBasePwd}"
 
         ACCBaseConnection        = "/F${env.ACCBasePach}"
         ACCBaseAuthorization     = "--db-user ${env.ACCBaseUser} --db-pwd ${env.ACCBasePwd}"
+
+        rac="\"C:\\Program Files\\1cv8\\${env.v8version}\\bin\\rac.exe\""
+        uccode="123"
+        ras="${env.rasServerAdres}:${env.rasServerPort}"
         
     }    
 
@@ -45,11 +50,24 @@ pipeline {
                 }
             }  
 
+        stage ('Lock Database') {
+             steps {
+                cmd("echo Lock Database")
+                cmd("call deployka session kill -db ${WorkBaseConnection} ${WorkBaseAuthorizationRac} -rac ${rac} -lockuccode ${uccode} -ras ${ras}")
+            }            
+        }
         stage ('Saving configuration') {
             steps {
                 cmd("echo Saving configuration")
                 cmd("vrunner load --src ${WORKSPACE}\\Temp\\1Cv8.cf --ibconnection ${WorkBaseConnection} ${WorkBaseAuthorization}")
                 cmd("vrunner updatedb --ibconnection ${WorkBaseConnection} ${WorkBaseAuthorization}")
+            }  
+        } 
+
+        stage ('UnLock Database') {
+             steps {
+                cmd("echo UnLock Database")
+                cmd("call deployka session unlock -db ${WorkBaseConnection} ${WorkBaseAuthorizationRac} -rac ${rac} -lockuccode ${uccode} -ras ${ras}")
             }  
         }  
 
