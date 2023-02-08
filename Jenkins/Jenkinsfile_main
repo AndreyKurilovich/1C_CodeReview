@@ -53,7 +53,7 @@ pipeline {
         stage ('Lock Database') {
              steps {
                 cmd("echo Lock Database")
-                cmd("call deployka session kill -db ${WorkBaseConnection} ${WorkBaseAuthorizationRac} -rac ${rac} -lockuccode ${uccode} -ras ${ras}")
+                cmd("call deployka session kill -db ${env.WorkBaseName} ${WorkBaseAuthorizationRac} -rac ${rac} -lockuccode ${uccode} -ras ${ras}")
             }            
         }
         stage ('Saving configuration') {
@@ -67,7 +67,7 @@ pipeline {
         stage ('UnLock Database') {
              steps {
                 cmd("echo UnLock Database")
-                cmd("call deployka session unlock -db ${WorkBaseConnection} ${WorkBaseAuthorizationRac} -rac ${rac} -lockuccode ${uccode} -ras ${ras}")
+                cmd("call deployka session unlock -db ${env.WorkBaseName} ${WorkBaseAuthorizationRac} -rac ${rac} -lockuccode ${uccode} -ras ${ras}")
             }  
         }  
 
